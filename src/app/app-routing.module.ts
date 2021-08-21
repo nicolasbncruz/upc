@@ -12,7 +12,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'acercade', component: AcercadeComponent },
+  { path: 'nosotros', component: AcercadeComponent },
   { path: 'equipo', component: EquipoComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'proyectos', component: ProyectosComponent },
