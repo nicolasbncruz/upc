@@ -16,6 +16,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { DashboarComponent } from './dashboar/dashboar.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { ProjectNewComponent } from './admin/project/project-new/project-new.component';
+import { ProjectListComponent } from './admin/project/project-list/project-list.component';
+import { ClientListComponent } from './admin/client/client-list/client-list.component';
+import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { ClientesComponent } from './clientes/clientes.component';
     ContactoComponent,
     ProyectosComponent,
     DashboarComponent,
-    ClientesComponent
+    ClientesComponent,
+    ProjectNewComponent,
+    ProjectListComponent,
+    ClientListComponent,
+    ClientNewComponent
   ],
   imports: [
     BrowserModule,
