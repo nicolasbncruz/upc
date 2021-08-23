@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboarComponent } from './dashboar/dashboar.component';
-import { AcercadeComponent } from './acercade/acercade.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { EquipoComponent } from './equipo/equipo.component';
-import { HomeComponent } from './home/home.component';
-import { ProyectosComponent } from './proyectos/proyectos.component';
-import { ServiciosComponent } from './servicios/servicios.component';
+import { AcercadeComponent } from './pages/acercade/acercade.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ClientesComponent } from './clientes/clientes.component';
 
 const routes: Routes = [
