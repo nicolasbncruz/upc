@@ -1,1 +1,76 @@
-<p>project-new works!</p>
+
+<!-- Page Header End -->
+
+<div class="contact wow fadeInUp">
+    <div class="container">
+        <div class="section-header text-center" style="color: rgb(0,0,0);">
+            <h2>Registrar Proyecto</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section-header text-center">
+                    <h1 style="color: #ffa555;">Datos de la Empresa</h1>
+                </div>
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="company" formControlName="company" placeholder="Empresa" required="required"
+                                data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="area" formControlName="area" placeholder="Área de la Empresa" required="required"
+                                data-validation-required-message="Please enter your service" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="projectManager" formControlName="projectManager" placeholder="Jefe de Proyecto"
+                                required="required" data-validation-required-message="Please enter a project type" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="service" formControlName="service" placeholder="Servicio"
+                                required="required" data-validation-required-message="Please enter a project phase" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="section-header text-center">
+                    <h1>Datos del Proyecto</h1>
+                </div>
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Nombre Proyecto" required="required"
+                                data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="projectType" formControlName="projectType" placeholder="Tipo de Proyecto"
+                                required="required" data-validation-required-message="Please enter a project type" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="projectPhase" formControlName="projectPhase" placeholder="Fase de Proyecto"
+                                required="required" data-validation-required-message="Please enter a project phase" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="initDate" formControlName="initDate" placeholder="Fecha Inicio" required="required"
+                                data-validation-required-message="Please enter your service" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button (click)="__onSubmit()" class="btn" type="submit" id="sendMessageButton">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
