@@ -1,3 +1,8 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
 <!-- Top Bar Start -->
 <div class="top-bar" [ngStyle]="{'display':esDashboard()? 'none':'block'}">
     <div class="container-fluid">
@@ -77,6 +82,77 @@
                         </div>
                     </div> -->
                     <a onclick="window.scroll(0,0)" routerLink="contacto" class="nav-item nav-link">Contacto</a>
+ 
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a onclick="window.scroll(0,0)" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Admin
+                            <span class="caret"></span>
+                        </a>                           
+                       
+                       
+                        <ul class="dropdown-menu">
+                            <li class="nav-link dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Administrar Proyectos
+                                </a>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li><a class="dropdown-item" routerLink="admin/project/new">Listar Proyectos</a></li>
+
+                                </ul>
+
+                            </li>
+   
+                        </ul>
+                    
+                        
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" routerLink="admin/project/new">Registrar Proyecto</a>
+                                <a class="dropdown-item" routerLink="admin/project/list">Listar Proyectos</a>
+                                <a class="dropdown-item" routerLink="admin/client/new">Registrar Cliente</a>
+                                <a class="dropdown-item" routerLink="admin/client/list">Listar Clientes</a>
+                            </div>
+                            
+                    </li>
+
+                    -->
+ 
+                    <div class="container">
+                        <div class="row">
+                
+                            <hr>
+                            <div class="dropdown">
+                                <a onclick="window.scroll(0,0)" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    ADMIN <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                  <li><a class="dropdown-item" routerLink="admin/project/new">Registrar Proyecto</a></li>
+                                  <li><a class="dropdown-item" routerLink="admin/project/list">Listar Proyectos</a></li>
+                                  <li><a class="dropdown-item" routerLink="admin/client/new">Registrar Cliente</a></li>
+                                  <li><a class="dropdown-item" routerLink="admin/client/list">Listar Clientes</a></li>
+                                  <li class="divider"></li>
+                                  <li class="dropdown-submenu">
+                                    <a tabindex="-1"  routerLink="admin/project/new">Hover me for more options</a>
+                                    <ul class="dropdown-menu">
+                                      <li><a tabindex="-1"  routerLink="admin/project/new">Second level</a></li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">Even More..</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">3rd level</a></li>
+                                            <li><a href="#">3rd level</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="#">Second level</a></li>
+                                      <li><a href="#">Second level</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
                 <div class="ml-auto">
                     <a class="btn" routerLink="dashboard">Ingrese</a>
@@ -125,3 +201,13 @@
         </ul>
     </div>
 </nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+<script src="js/bootnavbar.js"></script>
+<script>
+new bootnavbar();
+// (function () {
+// });
+</script>
