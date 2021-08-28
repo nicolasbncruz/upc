@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Renzo Alcantara",
+            "rol": "CEO & Fundador",
+            "image": "assets/img/team-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Carlos Guevara",
+            "rol": "Gerente de TI",
+            "image": "assets/img/team-2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Elizabeth Lopez",
+            "rol": "Líder de proyectos",
+            "image": "assets/img/team-3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "John Ricaldi",
+            "rol": "Data Science",
+            "image": "assets/img/team-4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Fanny Valverde",
+            "rol": "Gerenta de Mercadotecnia",
+            "image": "assets/img/team-5.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Frank Rivera",
+            "rol": "Ingeniero de Infraestructura",
+            "image": "assets/img/team-6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Angelica Orellana",
+            "rol": "Arquitecta de Soluciones",
+            "image": "assets/img/team-7.jpg"
+        }
+    ]
+}

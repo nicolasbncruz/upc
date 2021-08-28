@@ -23,18 +23,18 @@
         <div class="row">
 
             <div onclick="window.scroll(0,0)" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" type="button"
-                [routerLink]="['/servicio/', servicio.id]" *ngFor="let servicio of servicios">
+                [routerLink]="['/servicio/', service.id]" *ngFor="let service of services">
                 <div class="service-item">
                     <div class="service-img">
-                        <img src={{servicio.imagen}} alt="Image">
+                        <img src={{service.image}} alt="Image">
                         <div class="service-overlay">
                             <p>
-                                {{servicio.descripcion}}
+                                {{service.description}}
                             </p>
                         </div>
                     </div>
                     <div class="service-text">
-                        <h3>{{servicio.titulo}}</h3>
+                        <h3>{{service.name}}</h3>
                         <!-- <a class="btn" href={{servicio.imagen}} data-lightbox="service">+</a> -->
                         <a class="btn">+</a>
                     </div>

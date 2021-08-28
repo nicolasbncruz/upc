@@ -1,27 +1,22 @@
 # Grupo 2
 
+Proyecto para el curso Taller de Desarrollo Web
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-## Development server
+# Development server
+Para levantar la Aplicación:
+Agregar la dependencia: npm install -g nodemon
+## Para el server: 4001
+Ejecutar:
+## npm run start:api
+Ese comando ejecuta el servicio "start:api": "nodemon server/server.js"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Para el Front: 4201
+Ejecutar:
+## npm run start:server
+Ese comando ejecuta el Front de Angular "start:server": "ng serve --proxy-config proxy.conf.js",
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Construir en GithubPages
+Agregar la dependencia: ng add angular-cli-ghpages
+## Ejecutar: ng deploy --base-href=https://nicolasbncruz.github.io/upc/

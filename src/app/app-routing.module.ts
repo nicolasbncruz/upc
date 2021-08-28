@@ -8,12 +8,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ClientesComponent } from './clientes/clientes.component';
+
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
-
-import { DetalleServicioComponent } from './pages/servicios/detalle-servicio/detalle-servicio.component';
-
 import { ProjectNewComponent } from './admin/project/project-new/project-new.component';
+import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 
 
 
@@ -29,8 +28,10 @@ const routes: Routes = [
   { path: 'dashboard/clientes', component: ClientesComponent },
   { path: 'listarClientes', component: ClientListComponent},
   { path: 'crearCliente', component: ClientNewComponent},
-  { path: 'servicio/:id', component: DetalleServicioComponent },
-  { path: 'admin/project/new', component: ProjectNewComponent}
+  { path: 'admin/project/new', component: ProjectNewComponent},
+  { path: 'servicio/:id', component: DetalleServiceComponent },
+  { path: 'admin/project/new', component: ProjectNewComponent }
+
 ];
 
 @NgModule({
