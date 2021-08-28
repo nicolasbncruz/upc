@@ -20,6 +20,8 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
+import { DetalleServicioComponent } from './pages/servicios/detalle-servicio/detalle-servicio.component';
+import { ServicioService } from './pages/servicios/servicio.service';
 
 @NgModule({
   declarations: [
@@ -40,13 +42,16 @@ import { ClientNewComponent } from './admin/client/client-new/client-new.compone
     ProjectNewComponent,
     ProjectListComponent,
     ClientListComponent,
-    ClientNewComponent
+    ClientNewComponent,
+    DetalleServicioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ServicioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
