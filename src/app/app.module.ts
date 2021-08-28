@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
+import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +42,13 @@ import { ClientNewComponent } from './admin/client/client-new/client-new.compone
     ProjectNewComponent,
     ProjectListComponent,
     ClientListComponent,
-    ClientNewComponent
+    ClientNewComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

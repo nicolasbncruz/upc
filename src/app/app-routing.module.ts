@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'dashboard', component: DashboarComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'dashboard/clientes', component: ClientesComponent }
+  { path: 'dashboard/clientes', component: ClientesComponent },
+  { path: 'admin/project/project-detail', component: ProjectDetailComponent }
 ];
 
 @NgModule({
