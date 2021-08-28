@@ -1,3 +1,5 @@
+
+  
 <!-- Top Bar Start -->
 <div class="top-bar" [ngStyle]="{'display':esDashboard()? 'none':'block'}">
     <div class="container-fluid">
@@ -77,6 +79,15 @@
                         </div>
                     </div> -->
                     <a onclick="window.scroll(0,0)" routerLink="contacto" class="nav-item nav-link">Contacto</a>
+                    <li class="nav-item dropdown">
+                        <a onclick="window.scroll(0,0)" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" routerLink="admin/project/new">Registrar Proyecto</a>
+                                <a class="dropdown-item" routerLink="admin/project/list">Listar Proyectos</a>
+                                <a class="dropdown-item" routerLink="admin/client/new">Registrar Cliente</a>
+                                <a class="dropdown-item" routerLink="admin/client/list">Listar Clientes</a>
+                            </div>
+                    </li>
                 </div>
                 <div class="ml-auto">
                     <a class="btn" routerLink="dashboard">Ingrese</a>
