@@ -1,1 +1,60 @@
-<p>client-new works!</p>
+<div class="container" style="padding-top: 50px;">
+    <div class="row justify-content-md-center">
+        <h2>
+            REGISTRO DE CLIENTES
+        </h2>
+    </div>
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form [formGroup]="clienteForm">
+                <div class="row-6 p-2 bg-light border">
+                    <h5>DATOS DE LA EMPRESA</h5>
+                    <div class="form-group">
+                        <input type="text"  class="form-control" placeholder="RUC">
+                    </div>
+                    <div class="form-group">
+                        <input type="text"  class="form-control" placeholder="Razón social">
+                    </div>
+                    <div class="form-group">
+                        <input type="email"  class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row-6 p-2 bg-light border mt-4">
+                    <h5>DATOS DEL CLIENTE</h5>
+                    <div class="form-group">
+                        <label>*</label>
+                        <input type="text" formControlName="textNombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="textApePaterno" class="form-control" placeholder="Ape. Paterno">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="textApeMaterno" class="form-control" placeholder="Ape. Materno">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" formControlName="textTipoDoc" class="form-control" placeholder="Tipo de Doc.">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="textNumeroDoc" class="form-control" placeholder="Número de Doc.">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" formControlName="textEmailContacto" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" formControlName="textTelfCelular" class="form-control" placeholder="Telf. Celular">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-right align-self-end ">
+                        <button class="btn btn-outline-primary">Enviar</button>
+                        |
+                        <button class="btn btn-outline-danger">Limpiar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

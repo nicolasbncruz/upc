@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-client-new',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientNewComponent implements OnInit {
 
-  constructor() { }
+  clienteForm = this.fb.group({
+    textNombre: ['', [Validators.required]],
+    textApePaterno: ['', [Validators.required]],
+    textApeMaterno: ['', [Validators.required]],
+    textTipoDoc: ['', [Validators.required]],
+    textNumeroDoc: ['', [Validators.required]],
+    textEmailContacto: ['', [Validators.required, Validators.email]],
+    textTelfCelular: ['', [Validators.required]]
+  });
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }
