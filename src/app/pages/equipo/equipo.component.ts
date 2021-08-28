@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonService } from 'src/app/services/person.service';
 
 @Component({
   selector: 'app-equipo',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipoComponent implements OnInit {
 
-  constructor() { }
+  persons: any = [];
+
+  constructor(private readonly ps: PersonService) { }
+
+  obtenerPersonas() {
+    this.ps.getPersons().subscribe((rest: any) => {
+      console.log(rest.data);
+      this.persons = rest.data;
+    })
+  }
 
   ngOnInit(): void {
+    this.obtenerPersonas();
   }
 
 }

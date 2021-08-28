@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,8 +22,7 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
-import { DetalleServicioComponent } from './pages/servicios/detalle-servicio/detalle-servicio.component';
-import { ServicioService } from './pages/servicios/servicio.service';
+import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 
 
 @NgModule({
@@ -45,15 +45,15 @@ import { ServicioService } from './pages/servicios/servicio.service';
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    DetalleServicioComponent
+    DetalleServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
-    ServicioService
   ],
   bootstrap: [AppComponent]
 })

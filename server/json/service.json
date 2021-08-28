@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Big Data",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "image": "assets/img/service-1.jpg",
+            "project": [
+                {
+                    "id": 1,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project Biglog",
+                    "image": "assets/img/portfolio-1.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Machine Learning",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "image": "assets/img/service-2.jpg",
+            "project": [
+                {
+                    "id": 2,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project automation",
+                    "image": "assets/img/portfolio-2.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Arquitectura Cloud",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "image": "assets/img/service-3.jpg",
+            "project": [
+                {
+                    "id": 3,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project azure",
+                    "image": "assets/img/portfolio-3.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Consultoría TI",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "image": "assets/img/service-4.jpg",
+            "project": [
+                {
+                    "id": 4,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project nexus",
+                    "image": "assets/img/portfolio-4.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Change Management",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "image": "assets/img/service-5.jpg",
+            "project": [
+                {
+                    "id": 5,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project squads",
+                    "image": "assets/img/portfolio-5.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "E-Marketing",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "image": "assets/img/service-6.jpg",
+            "project": [
+                {
+                    "id": 1,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project marketing",
+                    "image": "assets/img/portfolio-1.jpeg"
+                }
+            ]
+        }
+    ]
+}
