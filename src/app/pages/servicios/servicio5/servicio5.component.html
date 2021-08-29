@@ -1,64 +1,30 @@
-<!-- Page Header Start -->
-<div *ngIf="service[0] != null" class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>{{service[0].name}}</h2>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Page Header End -->
+<!-- About Start -->
 
-<!-- Servicios por proyecto -->
-<div *ngIf="service[0] != null" class="about wow fadeInUp" data-wow-delay="0.1s">
+<div class="about wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6">
                 <div class="about-img">
-                    <img src="{{service[0].image}}" alt="Image">
+                    <img src="assets/img/service-5.jpg" alt="Image">
                 </div>
             </div>
             <div class="col-lg-7 col-md-6">
                 <div class="section-header text-left">
-                    <p>{{service[0].name}}</p>
-                    <h2>{{service[0].name}}</h2>
+                    
+                    <h2>Proyectos Ágiles</h2>
                 </div>
                 <div class="about-text">
                     <p>
-                        {{service[0].description}}
+                        Puedes consultar algunas de las soluciones Big Data que hemos llevado a cabo con nuestros clientes. Partiendo de un objetivo concreto, hemos estudiamos la mejor solución posible para llegar a conseguir los objetivos marcados.
+
                     </p>
-                    <!-- <a class="btn" href="">Learn More</a> -->
+                    
+                    <a onclick="window.scroll(0,0)" class="btn" routerLink="nosotros" href="">Leer más</a>
                 </div>
             </div>
         </div>
-        <br>
-        <hr><br>
-
-        <div *ngFor="let project of projects" class="row align-items-center">
-            <div *ngIf="project != null" class="col-lg-7 col-md-6">
-                <div class="section-header text-left">
-                    <!-- <p>Nuestro propósito</p> -->
-
-                    <h2>Proyectos de {{service[0].name}}</h2>
-                </div>
-                <div class="about-text">
-                    <div class="section-header text-left">
-                        <p>{{project.name}}</p>
-                    </div>
-                    <p>
-                        {{project.description}}
-                    </p>
-                    <br>
-                    <!-- <a class="btn" href="">Learn More</a> -->
-                </div>
-            </div>
-            <div *ngIf="project != null" class="col-lg-5 col-md-6">
-                <div class="about-img">
-                    <img src="{{project.image}}" alt="Image">
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
 <!-- About End -->
 <div class="contact wow fadeInUp">
     <div class="container">
@@ -124,8 +90,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
     </div>
 </div>

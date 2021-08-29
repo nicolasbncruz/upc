@@ -23,7 +23,12 @@ import { ProjectListComponent } from './admin/project/project-list/project-list.
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
-
+import { Servicio1Component } from './pages/servicios/servicio1/servicio1.component';
+import { Servicio2Component } from './pages/servicios/servicio2/servicio2.component';
+import { Servicio3Component } from './pages/servicios/servicio3/servicio3.component';
+import { Servicio4Component } from './pages/servicios/servicio4/servicio4.component';
+import { Servicio5Component } from './pages/servicios/servicio5/servicio5.component';
+import { Servicio6Component } from './pages/servicios/servicio6/servicio6.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,13 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    DetalleServiceComponent
+    DetalleServiceComponent,
+    Servicio1Component,
+    Servicio2Component,
+    Servicio3Component,
+    Servicio4Component,
+    Servicio5Component,
+    Servicio6Component
   ],
   imports: [
     BrowserModule,
