@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "rating": 5,
+            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.",
+            "image": "assets/img/testimonial-1.jpg",
+            "name": "Ena Shah",
+            "company": "Teacher at Abc School"
+        },
+        {
+            "id": 2,
+            "rating": 4,
+            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.",
+            "image": "assets/img/testimonial-2.jpg",
+            "name": "Mrs. Gosh",
+            "company": "Actor"
+        },
+        {
+            "id": 3,
+            "rating": 5,
+            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.",
+            "image": "assets/img/testimonial-3.jpg",
+            "name": "John Doe",
+            "company": "Model"
+        },
+        {
+            "id": 4,
+            "rating": 5,
+            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.",
+            "image": "assets/img/testimonial-4.jpg",
+            "name": "Jonathan Smith",
+            "company": "Creative Designer"
+        },
+        {
+            "id": 5,
+            "rating": 4,
+            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.",
+            "image": "assets/img/testimonial-1.jpg",
+            "name": "Sara A. K.",
+            "company": "Heroine"
+        },
+        {
+            "id": 6,
+            "rating": 5,
+            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.",
+            "image": "assets/img/testimonial-2.jpg",
+            "name": "David Smith",
+            "company": "Businessman"
+        }
+    ]
+}

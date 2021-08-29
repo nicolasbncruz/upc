@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { ServicioService } from '../../services/servicio.service';
+
 @Component({
   selector: 'app-servicios',
   templateUrl: './servicios.component.html',
@@ -8,9 +10,20 @@ import { Router } from '@angular/router';
 })
 export class ServiciosComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  services: any = [];
+
+  constructor(private router: Router,
+    private readonly ss: ServicioService,) { }
+
+  obtenerServicios() {
+    this.ss.getServices().subscribe((rest: any) => {
+      console.log(rest.data);
+      this.services = rest.data;
+    })
+  }
 
   ngOnInit(): void {
+    this.obtenerServicios();
   }
 
   esRutaHome() {
