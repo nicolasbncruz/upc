@@ -17,23 +17,23 @@ export class DetalleServiceComponent implements OnInit {
   projects: any = [];
   service: any = [];
 
-  contactusForm =this.fb.group({
-    nombre:['', Validators.required],
-    email:['', [Validators.required, Validators.email]],
-    numero:['',[Validators.required, Validators.minLength(9), Validators.maxLength(9)]],
-    mensaje:['', Validators.required]
+  contactusForm = this.fb.group({
+    nombre: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
+    numero: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(9)]],
+    mensaje: ['', Validators.required]
   })
 
   __onSubmit() {
-    if(this.contactusForm.valid) {
+    if (this.contactusForm.valid) {
       console.log(this.contactusForm.value);
       alert('Se envió el formulario')
-    }else{
+    } else {
       alert('Formulario no válido');
     }
-    }
+  }
 
- 
+
   getServiceById(id: number) {
     this.ss.getServices().subscribe((rest: any) => {
       this.service = rest.data.filter((item: { id: number }) => item.id == id);
