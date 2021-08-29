@@ -4,22 +4,42 @@ Proyecto para el curso Taller de Desarrollo Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-# Development server
-Para levantar la Aplicación:
+***
+* ## Para levantar la Aplicación:
 
-Agregar la dependencia: npm install -g nodemon
-## Para el server: 4001
+Agregar el `node_modules` package
+```sh
+npm install
+```
+Agregar `nodemon` package
+```sh
+npm install -g nodemon
+```
+***
+* ## Para iniciar el server del api rest en 4001
 Ejecutar:
-## npm run start:api
-Ese comando ejecuta el servicio "start:api": "nodemon server/server.js"
+```sh
+npm run start:api
+```
+> Nota: Este comando ejecuta el servicio `"start:api": "nodemon server/server.js"`
 
-## Para el Front: 4201
+***
+* ## Para iniciar el server de Angular en 4201
 Ejecutar:
-## npm run start:server
-Ese comando ejecuta el Front de Angular "start:server": "ng serve --proxy-config proxy.conf.js",
+```sh
+npm run start:server
+```
+> Nota: Este comando ejecuta el servicio `"start:server": "ng serve --proxy-config proxy.conf.js"`
 
-# Construir en GithubPages
-Agregar la dependencia: ng add angular-cli-ghpages
+  ***     
+* ## Construir en GithubPages
+Agregar la dependencia:
+```sh
+ng add angular-cli-ghpages
+```
 
 Ejecutar:
-## ng deploy --base-href=https://nicolasbncruz.github.io/upc/
+```sh
+ng deploy --base-href=https://nicolasbncruz.github.io/upc/
+```
+
