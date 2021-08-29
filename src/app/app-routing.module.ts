@@ -10,6 +10,7 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ProjectNewComponent } from './admin/project/project-new/project-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 
@@ -26,7 +27,8 @@ const routes: Routes = [
 
   { path: 'servicio/:id', component: DetalleServiceComponent },
 
-  { path: 'admin/project/new', component: ProjectNewComponent }
+  { path: 'admin/project/new', component: ProjectNewComponent },
+  { path: 'login', component: LoginComponent }
 
 ];
 
