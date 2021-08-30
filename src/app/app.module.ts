@@ -22,9 +22,10 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
-import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
-
+import { IssueComponent } from './dashboar/issue/issue.component';
+import { AddIssueComponent } from './dashboar/issue/add-issue/add-issue.component';
+import { EditIssueComponent } from './dashboar/issue/edit-issue/edit-issue.component';
 
 @NgModule({
   declarations: [
@@ -46,8 +47,10 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    ProjectDetailComponent,
-    DetalleServiceComponent
+    DetalleServiceComponent,
+    IssueComponent,
+    AddIssueComponent,
+    EditIssueComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,6 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
     HttpClientModule
   ],
   providers: [
-
   ],
   bootstrap: [AppComponent]
 })
