@@ -14,6 +14,7 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'servicio/:id', component: DetalleServiceComponent },
   { path: 'admin/project/new', component: ProjectNewComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegisterComponent },
   { path: 'admin/project/new', component: ProjectNewComponent },
   { path: 'admin/client/new', component: ClientNewComponent }
 ];
