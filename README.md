@@ -5,7 +5,7 @@ Proyecto para el curso Taller de Desarrollo Web
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ***
-* ## Para levantar la Aplicación:
+* ## 1. Para levantar la Aplicación:
 
 Agregar el `node_modules` package
 ```sh
@@ -16,7 +16,7 @@ Agregar `nodemon` package
 npm install -g nodemon
 ```
 ***
-* ## Para iniciar el server del api rest en 4001
+* ## 2. Para iniciar el server del api rest en 4001
 Ejecutar:
 ```sh
 npm run start:api
@@ -24,7 +24,7 @@ npm run start:api
 > Nota: Este comando ejecuta el servicio `"start:api": "nodemon server/server.js"`
 
 ***
-* ## Para iniciar el server de Angular en 4201
+* ## 3. Para iniciar el server de Angular en 4201
 Ejecutar:
 ```sh
 npm run start:server
@@ -32,7 +32,7 @@ npm run start:server
 > Nota: Este comando ejecuta el servicio `"start:server": "ng serve --proxy-config proxy.conf.js"`
 
   ***     
-* ## Construir en GithubPages
+* ## 4. (opcional) Construir en GithubPages
 Agregar la dependencia:
 ```sh
 ng add angular-cli-ghpages
