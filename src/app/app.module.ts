@@ -23,9 +23,8 @@ import { ProjectListComponent } from './admin/project/project-list/project-list.
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
-import { IssueComponent } from './dashboar/issue/issue.component';
-import { AddIssueComponent } from './dashboar/issue/add-issue/add-issue.component';
-import { EditIssueComponent } from './dashboar/issue/edit-issue/edit-issue.component';
+
+
 
 @NgModule({
   declarations: [
@@ -47,10 +46,7 @@ import { EditIssueComponent } from './dashboar/issue/edit-issue/edit-issue.compo
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    DetalleServiceComponent,
-    IssueComponent,
-    AddIssueComponent,
-    EditIssueComponent
+    DetalleServiceComponent
   ],
   imports: [
     BrowserModule,

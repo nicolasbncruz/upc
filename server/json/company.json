@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Barbarian",
+            "ruc": "204563218479",
+            "image": "assets/img/client-barbarian.png",
+            "dirección": "lima 123"
+        },
+        {
+            "id": 2,
+            "name": "Chazki",
+            "ruc": "204563218479",
+            "image": "assets/img/client-chazki.png",
+            "dirección": "lima 123"
+        },
+        {
+            "id": 3,
+            "name": "Promart",
+            "ruc": "204563218479",
+            "image": "assets/img/client-promart.png",
+            "dirección": "lima 123"
+        },
+        {
+            "id": 4,
+            "name": "Innova Schools",
+            "ruc": "204563218479",
+            "image": "assets/img/client-innova.png",
+            "dirección": "lima 123"
+        },
+        {
+            "id": 5,
+            "name": "Juntoz",
+            "ruc": "204563218479",
+            "image": "assets/img/client-juntoz.png",
+            "dirección": "lima 123"
+        },
+        {
+            "id": 6,
+            "name": "Stabilo",
+            "ruc": "204563218479",
+            "image": "assets/img/client-stabilo.png",
+            "dirección": "lima 123"
+        },
+        {
+            "id": 7,
+            "name": "Nuqa",
+            "ruc": "204563218479",
+            "image": "assets/img/client-nuqa.jpg",
+            "dirección": "lima 123"
+        }
+    ]
+}
