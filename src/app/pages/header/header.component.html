@@ -62,7 +62,7 @@
 <div class="nav-bar" [ngStyle]="{'display':esDashboard()? 'none':'block'}">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <a href="#" class="navbar-brand">MENU</a>
+            <a onclick="window.scroll(0,0)" routerLink="login" class="navbar-brand">INGRESE</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -83,7 +83,7 @@
                         </div>
                     </div> -->
                     <a onclick="window.scroll(0,0)" routerLink="contacto" class="nav-item nav-link">Contacto</a>
-                            
+
                     <div class="container">
                         <div class="row">
 
@@ -145,7 +145,7 @@
                 <a class="nav-link" routerLink="/">Million Consulting <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="dashboard">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" routerLink="dashboard">Datos del cliente <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['/dashboard/clientes']">Clientes</a>
@@ -178,4 +178,3 @@
 // (function () {
 // });
 </script>
-
