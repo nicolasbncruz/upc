@@ -1,102 +1,110 @@
-
-<!-- Page Header End -->
-
-<div class="contact wow fadeInUp">
-    <div class="container">
+<div class="container" >
+    <div class="row" style="padding-top: 30px;">
         <div class="section-header text-center" style="color: rgb(0,0,0);">
-            <h2>Registrar Proyecto</h2>
+            <h2>Registro de Proyectos</h2>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="section-header text-center">
-                    <h1 style="color: #ffa555;">Datos de la Empresa</h1>
-                </div>
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <select class="form-control form-control-sm" formControlName="company" required="required" style="color: rgb(0,0,0);" >
-                                <option value="" selected="">Seleccione Empresa</option>
-                                <option>Auna</option>
-                                <option>Promart</option>
-                                <option>Innova Schools</option>
-                                <option>Barbarian</option>
-                                <option>Telefonica del Peru</option>
-                                <option>Claro</option>
-                                <option>Interbank</option>
-                                <option>BCP</option>
-                            </select>
-                            <!--
-                            <input type="text" class="form-control" id="company" formControlName="company" placeholder="Empresa" required="required"
-                                data-validation-required-message="Please enter your name" />
-                            -->
-                            <p class="help-block text-danger"></p>
-                            
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="area" formControlName="area" placeholder="Área de la Empresa"  required="required"
-                                data-validation-required-message="Please enter your service"/>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectManager" formControlName="projectManager" placeholder="Jefe de Proyecto"
-                                required="required" data-validation-required-message="Please enter a project type" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <select class="form-control form-control-sm" formControlName="service" required="required" style="color: rgb(0,0,0);">
-                                <option value="" selected="">Seleccione Servicio</option>
-                                <option>Big Data</option>
-                                <option>Machine Learning</option>
-                                <option>Arquitectura Cloud</option>
-                                <option>Transformación Digital</option>
-                                <option>Proyectos Ágiles</option>
-                                <option>E-Marketing</option>
-                            </select>
-                            <p class="help-block text-danger"></p>
-                        </div>
+    </div>
+</div>
 
-                    </form>
+<div class="container" style="padding-left: 260px;">
+
+    <div class="card bg-light mb-3" style="max-width: 38rem;">
+        <div class="card-header">
+            <h2 style="margin-bottom: 0px; text-align: center;">
+                Datos de la Empresa
+            </h2>
+        </div>
+        <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
+            <form [formGroup]="projectForm">
+                <div class="control-group">
+                    <select  class="form-control form-control-sm" formControlName="company" required="required" style="color: rgb(0,0,0);" >
+                        <option value="" selected="">Seleccione Empresa</option>
+                        <option *ngFor="let c of companies">{{c.name}}</option>
+                       
+                    </select>
+                    <!--
+                    <input type="text" class="form-control" id="company" formControlName="company" placeholder="Empresa" required="required"
+                        data-validation-required-message="Please enter your name" />
+                    -->
+                    <p class="help-block text-danger"></p>
+                    
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="section-header text-center">
-                    <h1>Datos del Proyecto</h1>
+                <div class="control-group">
+                    <input type="text" class="form-control" id="area" formControlName="area" placeholder="Área de la Empresa"  required="required"
+                        data-validation-required-message="Please enter your service"/>
+                    <p class="help-block text-danger"></p>
                 </div>
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Nombre Proyecto" required="required"
-                                data-validation-required-message="Please enter your name"  />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <select class="form-control form-control-sm" formControlName="projectType" required="required" style="color: rgb(0,0,0);">
-                                <option value="" selected="">Seleccione Tipo Proyecto</option>
-                                <option>Agile</option>
-                                <option>Cascade</option>
-                            </select>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectPhase" formControlName="projectPhase" placeholder="Fase de Proyecto"
-                                required="required" data-validation-required-message="Please enter a project phase" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="date" class="form-control" id="initDate" formControlName="initDate" placeholder="Fecha Inicio" required="required"
-                                data-validation-required-message="Please enter your service" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                  
-                        <div>
-                            <button (click)="__onSubmit()" class="btn" type="submit" id="sendMessageButton">Registrar</button>
-                        </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" id="projectManager" formControlName="projectManager" placeholder="Jefe de Proyecto"
+                        required="required" data-validation-required-message="Please enter a project type" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <select class="form-control form-control-sm" formControlName="service" required="required" style="color: rgb(0,0,0);">
+                        <option value="" selected="">Seleccione Servicio</option>
+                        <option *ngFor="let s of services">{{s.name}}</option>
+                      
+                    </select>
+                    <p class="help-block text-danger"></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <br>
  
-                    </form>
+</div>
+<div class="container" style="padding-left: 260px;">
+
+    <div class="card bg-light mb-3" style="max-width: 38rem;">
+        <div class="card-header">
+            <h2 style="margin-bottom: 0px; text-align: center;">
+                Datos del Proyecto
+            </h2>
+        </div>
+        <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
+            <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                    <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Nombre Proyecto" required="required"
+                        data-validation-required-message="Please enter your name"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <select class="form-control form-control-sm" formControlName="projectType" required="required" style="color: rgb(0,0,0);">
+                        <option value="" selected="">Seleccione Tipo Proyecto</option>
+                        <option>Agile</option>
+                        <option>Cascade</option>
+                    </select>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" id="projectPhase" formControlName="projectPhase" placeholder="Fase de Proyecto"
+                        required="required" data-validation-required-message="Please enter a project phase" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="date" class="form-control" id="initDate" formControlName="initDate" placeholder="Fecha Inicio" required="required"
+                        data-validation-required-message="Please enter your service" />
+                    <p class="help-block text-danger"></p>
+                </div>
+      
+
+            </form>
+        </div>
+
+        
+        <div class="card-footer bg-transparent"
+            style="text-align: center; padding-left: 40px; padding-right: 40px; margin-bottom: 0%;">
+            <div class="form-group">
+                <div class="btn bg-warning mb-3" style="width: 40%;">
+                    <a onclick="window.scroll(0,0)" (click)="__onSubmit()" type="submit" class="btn"
+                        class="btn btn-outlin-primary" data-wow-delay=".6s">REGISTRAR
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+ 
 </div>
+<br>

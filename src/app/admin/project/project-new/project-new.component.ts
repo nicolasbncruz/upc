@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { CompanyService } from 'src/app/services/company.service';
+import { ServicioService } from 'src/app/services/servicio.service';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-project-new',
@@ -20,19 +25,45 @@ export class ProjectNewComponent implements OnInit {
 
   })
 
-  constructor(private fb: FormBuilder) { }
+  companies: any = [];
+  services: any = [];
+
+  constructor(private fb: FormBuilder,
+              private readonly cs: CompanyService,
+              private readonly ss: ServicioService,
+              private router: Router){ }
+  
+  obtenerEmpresas() {
+    this.cs.getCompanies().subscribe((rest: any) => {
+      console.log(rest.data);
+      this.companies = rest.data;
+      
+    })
+  }
+
+  obtenerServicios() {
+    this.ss.getServices().subscribe((rest: any) => {
+      console.log(rest.data);
+      this.services = rest.data;
+    })
+  }
 
   __onSubmit(){
     if(this.projectForm.valid){
       console.log(this.projectForm.value);
+      Swal.fire({ icon: 'success', title: 'Proyecto ingresado con éxito', showConfirmButton: false, timer: 2500 });
+      this.router.navigate(['admin/project/list']);
     }else{
-      alert('Formulario no válido');
+
+      Swal.fire({ icon: 'error', title: 'Por favor complete todos los datos obligatorios', text: 'datos no válidos' });
     }
 
 
   }
 
   ngOnInit(): void {
+    this.obtenerEmpresas();
+    this.obtenerServicios();
   }
 
 }
