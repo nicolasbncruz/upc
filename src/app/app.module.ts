@@ -24,6 +24,8 @@ import { ClientListComponent } from './admin/client/client-list/client-list.comp
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
