@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -23,6 +23,8 @@ import { ProjectListComponent } from './admin/project/project-list/project-list.
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
+import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
+
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    DetalleServiceComponent
+    DetalleServiceComponent,
+    ProjectUpdateComponent
   ],
   imports: [
     BrowserModule,

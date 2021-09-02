@@ -8,6 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class ClientNewComponent implements OnInit {
 
+
   selectTipoDoc: string;
 
   listTipoDoc = [

@@ -1,0 +1,10 @@
+.registro a {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 30px;
+    border-radius: 6px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgb(66, 153, 235);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

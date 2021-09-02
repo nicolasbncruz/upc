@@ -10,7 +10,6 @@
 </div>
 <!-- Page Header End -->
 
-
 <!-- Servicios por proyecto -->
 <div *ngIf="service[0] != null" class="about wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
@@ -26,7 +25,7 @@
                     <h2>{{service[0].name}}</h2>
                 </div>
                 <div class="about-text">
-                    <p>
+                    <p align="justify">
                         {{service[0].description}}
                     </p>
                     <!-- <a class="btn" href="">Learn More</a> -->
@@ -47,7 +46,7 @@
                     <div class="section-header text-left">
                         <p>{{project.name}}</p>
                     </div>
-                    <p>
+                    <p align="justify">
                         {{project.description}}
                     </p>
                     <br>
@@ -60,7 +59,78 @@
                 </div>
             </div>
         </div>
+        <!-- About End -->
+        <div class="contact wow fadeInUp">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Contáctenos</p>
+                    <h2>Para cualquier consulta</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="flaticon-address"></i>
+                                <div class="contact-text">
+                                    <h2>Dirección</h2>
+                                    <p>Av. Gral. Salaverry 2303, Lima, PE</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="flaticon-call"></i>
+                                <div class="contact-text">
+                                    <h2>Teléfono</h2>
+                                    <p>+051 345 67890</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="flaticon-send-mail"></i>
+                                <div class="contact-text">
+                                    <h2>Email</h2>
+                                    <p>contacto@million.com.pe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form [formGroup]="contactusForm">
+                                <div class="control-group">
+                                    <input type="text" formControlName="nombre" class="form-control" id="name"
+                                        placeholder="Nombre" required="required"
+                                        data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="email" formControlName="email" class="form-control" id="email"
+                                        placeholder="Email" required="required"
+                                        data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" formControlName="numero" class="form-control" id="subject"
+                                        placeholder="Número" required="required"
+                                        data-validation-required-message="Please enter a subject" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea formControlName="mensaje" class="form-control" id="message"
+                                        placeholder="Mensaje" required="required"
+                                        data-validation-required-message="Please enter your message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div>
 
+                                    <button (click)="__onSubmit()" class="btn" type="submit"
+                                        id="sendMessageButton">Enviar mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>

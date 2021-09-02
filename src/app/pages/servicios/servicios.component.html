@@ -21,14 +21,16 @@
             <h2>Nuestra experiencia en acción</h2>
         </div>
         <div class="row">
-
             <div onclick="window.scroll(0,0)" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" type="button"
                 [routerLink]="['/servicio/', service.id]" *ngFor="let service of services">
                 <div class="service-item">
                     <div class="service-img">
                         <img src={{service.image}} alt="Image">
                         <div class="service-overlay">
-                            <p>
+                            <!-- <p>
+                                    Comunicación directa con los usuarios a través de medios digitales.
+                                </p> -->
+                            <p align="justify">
                                 {{service.description}}
                             </p>
                         </div>
@@ -40,6 +42,99 @@
                     </div>
                 </div>
             </div>
+            <!-- <div onclick="window.scroll(0,0)" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" type="button"
+                [routerLink]="['/servicio/', service.id]" *ngFor="let service of services">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="assets/img/service-1.jpg" alt="Image">
+                        <div class="service-overlay">
+                            <a href="/servicios/servicios1">
+                            <p>
+                                Las empresas pueden utilizar técnicas de analítica avanzada, como análisis de texto, machine learning, analítica predictiva, minería de datos, estadísticas y procesamiento de lenguaje natural para obtener nuevos conocimientos.
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Big Data</h3>
+                        <a class="btn" href="assets/img/service-1.jpg" data-lightbox="service">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="assets/img/service-2.jpg" alt="Image">
+                        <div class="service-overlay">
+                            <a href="/servicios/servicios2">
+                                <p>
+                                    Permite analizar las preferencias de los clientes para ofrecer productos personalizados de forma automática.
+                                </p>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Machine Learning</h3>
+                        <a class="btn" href="assets/img/service-2.jpg" data-lightbox="service">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="assets/img/service-3.jpg" alt="Image">
+                        <div class="service-overlay">
+                            <a href="/servicios/servicios3">
+                                <p>
+                                    Permite acceder a un gran volumen de información relativa a la actividad de la empresa sin necesidad de invertir en una infraestructura para acceder y disponer de la misma.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Architectura Cloud</h3>
+                        <a class="btn" href="assets/img/service-3.jpg" data-lightbox="service">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="assets/img/service-4.jpg" alt="Image">
+                        <div class="service-overlay">
+                            <a href="/servicios/servicios4">
+                                <p>
+                                    La recompensa para quienes abracen esta Transformación Digital es la de generar valor, obtener ventajas competitivas y descubrir nuevas oportunidades de negocios.
+                                   
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Transformación Digital</h3>
+                        <a class="btn" href="assets/img/service-4.jpg" data-lightbox="service">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="assets/img/service-5.jpg" alt="Image">
+                        <div class="service-overlay">
+                            <a href="/servicios/servicios5">
+                                <p>
+                                     
+                                    Adaptarse rápidamente a los cambios del mercado de manera interna y externa. Contestar en poco tiempo y con flexibilidad a las peticiones de los clientes.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Proyectos Agiles</h3>
+                        <a class="btn" href="assets/img/service-5.jpg" data-lightbox="service">+</a>
+                    </div>
+                </div>
+            </div> -->
 
         </div>
     </div>

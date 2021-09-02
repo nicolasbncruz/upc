@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CompanyService } from 'src/app/services/company.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  companies: any = [];
+
+  constructor(private readonly companyService: CompanyService) { }
 
   ngOnInit(): void {
+    this.obtenerEmpresasCliente();
+  }
+
+  obtenerEmpresasCliente() {
+    this.companyService.getCompanies().subscribe((rest: any) => {
+      console.log(rest.data)
+      this.companies = rest.data;
+    })
   }
 
 }

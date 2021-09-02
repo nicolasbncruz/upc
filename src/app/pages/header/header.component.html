@@ -1,8 +1,7 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
 <!-- Top Bar Start -->
 <div class="top-bar" [ngStyle]="{'display':esDashboard()? 'none':'block'}">
     <div class="container-fluid">
@@ -10,7 +9,9 @@
             <div class="col-lg-4 col-md-12">
                 <div class="logo">
                     <a href="index.html">
-                        <h1>Million</h1>
+                        <h1><img src="assets/img/logo_million.png"
+                                style="height: 45px; width: 45px; margin-right: 10px; padding-top: -25px; padding-bottom: 5px;">Million
+                        </h1>
                         <!-- <img src="img/logo.jpg" alt="Logo"> -->
                     </a>
                 </div>
@@ -61,7 +62,7 @@
 <div class="nav-bar" [ngStyle]="{'display':esDashboard()? 'none':'block'}">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <a href="#" class="navbar-brand">MENU</a>
+            <a onclick="window.scroll(0,0)" routerLink="login" class="navbar-brand">INGRESE</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -83,41 +84,6 @@
                     </div> -->
                     <a onclick="window.scroll(0,0)" routerLink="contacto" class="nav-item nav-link">Contacto</a>
 
-                    <!--
-                    <li class="nav-item dropdown">
-                        <a onclick="window.scroll(0,0)" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Admin
-                            <span class="caret"></span>
-                        </a>                           
-                       
-                       
-                        <ul class="dropdown-menu">
-                            <li class="nav-link dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Administrar Proyectos
-                                </a>
-                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                    <li><a class="dropdown-item" routerLink="admin/project/new">Listar Proyectos</a></li>
-
-                                </ul>
-
-                            </li>
-   
-                        </ul>
-                    
-                        
-                            <div class="dropdown-menu">
-
-                                <a class="dropdown-item" routerLink="admin/project/new">Registrar Proyecto</a>
-                                <a class="dropdown-item" routerLink="admin/project/list">Listar Proyectos</a>
-                                <a class="dropdown-item" routerLink="admin/client/new">Registrar Cliente</a>
-                                <a class="dropdown-item" routerLink="admin/client/list">Listar Clientes</a>
-                            </div>
-                            
-                    </li>
-
-                    -->
-
                     <div class="container">
                         <div class="row">
 
@@ -135,31 +101,14 @@
                                     <li><a class="dropdown-item" routerLink="admin/client/new">Registrar Cliente</a>
                                     </li>
                                     <li><a class="dropdown-item" routerLink="admin/client/list">Listar Clientes</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-submenu">
-                                        <a tabindex="-1" routerLink="admin/project/new">Hover me for more options</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a tabindex="-1" routerLink="admin/project/new">Second level</a></li>
-                                            <li class="dropdown-submenu">
-                                                <a href="#">Even More..</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">3rd level</a></li>
-                                                    <li><a href="#">3rd level</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Second level</a></li>
-                                            <li><a href="#">Second level</a></li>
-                                        </ul>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="ml-auto">
-                    <a class="btn" routerLink="dashboard">Ingrese</a>
+                    <a class="btn" onclick="window.scroll(0,0)" routerLink="login">Ingresar</a>
                 </div>
             </div>
         </nav>
@@ -181,7 +130,7 @@
                 <a class="nav-link" routerLink="/">Million Consulting <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="dashboard">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" routerLink="dashboard">Datos del cliente <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['/dashboard/clientes']">Clientes</a>

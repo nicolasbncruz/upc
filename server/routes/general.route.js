@@ -29,8 +29,14 @@ module.exports = app => {
         res.json(data);
     })
 
+
     app.get('/api/clientes', (req, res) => {
         var data = require('../json/cliente.json');
+        res.json(data);
+    })
+
+    app.get('/api/companies', (req, res) => {
+        var data = require('../json/company.json');
         res.json(data);
     })
 }
