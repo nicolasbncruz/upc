@@ -8,6 +8,14 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class ClientNewComponent implements OnInit {
 
+  selectTipoDoc: string;
+
+  listTipoDoc = [
+    {id: '01', name: 'DNI'},
+    {id: '02', name: 'CARNET DE EXT.'},
+    {id: '03', name: 'PASAPORTE'}
+  ];
+
   clienteForm = this.fb.group({
     textNombre: ['', [Validators.required]],
     textApePaterno: ['', [Validators.required]],
@@ -19,6 +27,20 @@ export class ClientNewComponent implements OnInit {
   });
 
   constructor(private fb: FormBuilder) { }
+
+  __onSubmit() {
+    if(this.clienteForm.valid) {
+      console.log(this.clienteForm.value);
+    } else {
+      alert('Formulario no valido');
+    }
+  }
+
+  __onClear() {
+    this.clienteForm.reset();
+  }
+
+
 
   ngOnInit(): void {
   }

@@ -24,7 +24,6 @@
                 <div class="row-6 p-2 bg-light border mt-4">
                     <h5>DATOS DEL CLIENTE</h5>
                     <div class="form-group">
-                        <label>*</label>
                         <input type="text" formControlName="textNombre" class="form-control" placeholder="Nombre">
                     </div>
                     <div class="form-group">
@@ -34,7 +33,12 @@
                         <input type="text" formControlName="textApeMaterno" class="form-control" placeholder="Ape. Materno">
                     </div>
                     <div class="form-group">
-                        <input type="email" formControlName="textTipoDoc" class="form-control" placeholder="Tipo de Doc.">
+                        <select class="form-select" aria-label="Default select example" formControlName="textTipoDoc">
+                            <option [ngValue]="null" disabled >Selecciona tipo doc.</option>
+                            <option *ngFor="let itemTipoDoc of listTipoDoc" [ngValue]="itemTipoDoc.id">
+                                {{itemTipoDoc.name}}
+                            </option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <input type="text" formControlName="textNumeroDoc" class="form-control" placeholder="Número de Doc.">
@@ -48,11 +52,28 @@
                 </div>
                 <div class="row">
                     <div class="col text-right align-self-end ">
-                        <button class="btn btn-outline-primary">Enviar</button>
-                        |
-                        <button class="btn btn-outline-danger">Limpiar</button>
+                        <button class="btn btn-primary" routerLink="/listarClientes" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 50px;margin-left: 0;color: rgba(255,255,255,0.9);">
+                            Regresar
+                        </button>
+                        <button class="btn btn-primary" (click)="__onSubmit()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 50px;margin-left: 0;color: rgba(255,255,255,0.9);">
+                            Enviar
+                        </button>
+                        <button class="btn btn-primary" (click)="__onClear()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 0;margin-left: 0;color: rgba(255,255,255,0.9);">
+                            Limpiar
+                        </button>
                     </div>
                 </div>
+
+                <!--
+                <div>
+                    <p>
+                        Datos del formulario: {{ clienteForm.value | json }}
+                    </p>
+                    <p>
+                        Formulario valido: {{ clienteForm.valid }}
+                    </p>
+                </div>
+                -->
             </form>
         </div>
         <div class="col-3"></div>
