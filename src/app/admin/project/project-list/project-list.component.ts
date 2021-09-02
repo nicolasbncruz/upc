@@ -41,13 +41,19 @@ export class ProjectListComponent implements OnInit {
   __getCompaniesByName(id: number) {
     this.ps.getProjects().subscribe((rest: any) => {
       this.projects = rest.data.filter((item: { companyId: number }) => item.companyId == id);
+    
     })
   }
 
   __onSubmit(){
-   
-    console.log(this.projectForm.value);
-     
+
+    if(this.projectForm.valid){
+      this.__getCompaniesByName(this.projectForm.value.companyId);
+    }else{
+      
+      this.obtenerProyectos();
+    }
+
   }
 
   ngOnInit(): void {
