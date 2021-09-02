@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ProjectService } from 'src/app/services/project.service';
 import { ServicioService } from 'src/app/services/servicio.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-detalle-service',
@@ -27,9 +28,10 @@ export class DetalleServiceComponent implements OnInit {
   __onSubmit() {
     if (this.contactusForm.valid) {
       console.log(this.contactusForm.value);
-      alert('Se envió el formulario')
+      Swal.fire({ icon: 'success', title: 'Te has registrado con éxito', showConfirmButton: true });
+      this.contactusForm.reset();
     } else {
-      alert('Formulario no válido');
+      Swal.fire({ icon: 'error', title: 'Datos incorrectos', text: 'datos no válidos' });
     }
   }
 
