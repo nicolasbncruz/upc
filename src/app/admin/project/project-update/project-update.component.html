@@ -1,12 +1,12 @@
 <div class="container" >
     <div class="row" style="padding-top: 30px;">
         <div class="section-header text-center" style="color: rgb(0,0,0);">
-            <h2>Registro de Proyectos</h2>
+            <h2>Actualice Proyecto</h2>
         </div>
     </div>
 </div>
 
-<div class="container" style="padding-left: 265px;">
+<div class="container" style="padding-left: 260px;">
 
     <div class="card bg-light mb-3" style="max-width: 38rem;">
         <div class="card-header">
@@ -15,11 +15,11 @@
             </h2>
         </div>
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
-            <form [formGroup]="projectForm">
+            <form >
                 <div class="control-group">
                     <select  class="form-control form-control-sm" formControlName="company" required="required" style="color: rgb(0,0,0);" >
                         <option value="" selected="">Seleccione Empresa</option>
-                        <option *ngFor="let c of companies">{{c.name}}</option>
+                        
                        
                     </select>
                     <!--
@@ -42,7 +42,7 @@
                 <div class="control-group">
                     <select class="form-control form-control-sm" formControlName="service" required="required" style="color: rgb(0,0,0);">
                         <option value="" selected="">Seleccione Servicio</option>
-                        <option *ngFor="let s of services">{{s.name}}</option>
+                        
                       
                     </select>
                     <p class="help-block text-danger"></p>
@@ -54,7 +54,7 @@
     <br>
  
 </div>
-<div class="container" style="padding-left: 265px;">
+<div class="container" style="padding-left: 260px;">
 
     <div class="card bg-light mb-3" style="max-width: 38rem;">
         <div class="card-header">
@@ -63,7 +63,7 @@
             </h2>
         </div>
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
-            <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form  name="sentMessage" id="contactForm" novalidate="novalidate">
                 <div class="control-group">
                     <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Nombre Proyecto" required="required"
                         data-validation-required-message="Please enter your name"  />
@@ -97,8 +97,8 @@
             style="text-align: center; padding-left: 40px; padding-right: 40px; margin-bottom: 0%;">
             <div class="form-group">
                 <div class="btn bg-warning mb-3" style="width: 40%;">
-                    <a onclick="window.scroll(0,0)" (click)="__onSubmit()" type="submit" class="btn"
-                        class="btn btn-outlin-primary" data-wow-delay=".6s">REGISTRAR
+                    <a onclick="window.scroll(0,0)" type="submit" class="btn"
+                        class="btn btn-outlin-primary" data-wow-delay=".6s">ACTUALIZAR
                     </a>
                 </div>
             </div>

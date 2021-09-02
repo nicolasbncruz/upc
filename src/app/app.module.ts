@@ -23,6 +23,7 @@ import { ProjectListComponent } from './admin/project/project-list/project-list.
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
+import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
 
 
 
@@ -46,7 +47,8 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    DetalleServiceComponent
+    DetalleServiceComponent,
+    ProjectUpdateComponent
   ],
   imports: [
     BrowserModule,
