@@ -5,35 +5,45 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project Biglog",
             "image": "assets/img/portfolio-1.jpeg",
-            "serviceId": 1
+            "serviceId": 1,
+            "company": "Barbarian",
+            "companyId": 1
         },
         {
             "id": 2,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project automation",
             "image": "assets/img/portfolio-2.jpeg",
-            "serviceId": 2
+            "serviceId": 2,
+            "company": "Barbarian",
+            "companyId": 1
         },
         {
             "id": 3,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project azure",
             "image": "assets/img/portfolio-3.jpeg",
-            "serviceId": 3
+            "serviceId": 3,
+            "company": "Innova Schools",
+            "companyId": 4
         },
         {
             "id": 4,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project nexus",
             "image": "assets/img/portfolio-4.jpeg",
-            "serviceId": 4
+            "serviceId": 4,
+            "company": "Promart",
+            "companyId": 3
         },
         {
             "id": 5,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project squads",
             "image": "assets/img/portfolio-5.jpeg",
-            "serviceId": 5
+            "serviceId": 5,
+            "company": "Chazki",
+            "companyId": 2
         }
     ]
 }
