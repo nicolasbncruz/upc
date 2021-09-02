@@ -9,3 +9,12 @@
     width:100%;
     background-color: rgb(235, 235, 235);
   }
+
+  .pie-grid .percent-label {
+    font-size: 32px!important;
+    font-weight: 400!important;
+}
+.ngx-charts .label {
+  font-size: 35px!important;
+  font-weight: 400!important;
+}

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -23,6 +24,7 @@ import { ProjectListComponent } from './admin/project/project-list/project-list.
 import { ClientListComponent } from './admin/client/client-list/client-list.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
+import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 
 
 
@@ -46,13 +48,15 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
     ProjectListComponent,
     ClientListComponent,
     ClientNewComponent,
-    DetalleServiceComponent
+    DetalleServiceComponent,
+    EstadisticaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxChartsModule
   ],
   providers: [
   ],

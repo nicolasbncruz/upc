@@ -13,6 +13,7 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
 import { LoginComponent } from './auth/login/login.component';
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegisterComponent },
   { path: 'admin/project/new', component: ProjectNewComponent },
-  { path: 'admin/client/new', component: ClientNewComponent }
+  { path: 'admin/client/new', component: ClientNewComponent },
+  { path: 'estadistica', component: EstadisticaComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,31 @@
+.ngx-charts{
+    align-items: center !important;
+    display: inline-flex !important;
+    border: none !important;
+}
+.tabla-responsiva {
+
+    min-height: 0;
+    
+    display: block!important;
+    
+    /* align-content: flex-start!important; */
+    
+    align-content: center!important;
+    
+    flex-direction: column!important;
+    
+    background: border-box!important;
+    
+    overflow-x: auto!important;
+    
+    scroll-snap-type: x proximity!important;
+    
+    }
+
+    .pie-grid .percent-label {
+        font-size: 32px!important;
+        font-weight: 400!important;
+    }
+
+
