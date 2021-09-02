@@ -1,66 +1,57 @@
 <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
-    <div class="mycarrousel">
-        <div class="container">
 
-
-            <div class="section-header text-center">
-                <br><br>
-                <p>Comentarios</p>
-                <h2 style="color: cornsilk;">Testimonios</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <div class="col-md-4" *ngFor="let comment of comments">
-                                        <div class="single-box">
-                                            <div class="img-area"><img src="{{comment.image}}" alt=""></div>
-                                            <div class="img-text">
-                                                <h5 style="color:darkgoldenrod;">{{comment.name}}</h5>
-                                                <!-- <p style="color: rgb(146, 114, 114);">{{comment.company}}</p> -->
-                                                <p align="justify">{{comment.comment}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-4 col-md-6 -mt-25" *ngFor="let comment of comments">
-                <div class="single-testimonial wow fadeInUp" data-wow-delay=".2s">
-                    <div class="rating">
-                        <i class="lni lni-star-filled" *ngFor="let i of [].constructor(5)"></i>
-                    </div>
-                    <div class="content">
-                        <p style="color: cornsilk;">{{comment.comment}}</p>
-                    </div>
-                    <div class="info">
-                        <div class="image">
-                            <img src={{comment.image}} alt="" />
-                        </div>
-                        <div class="text">
-                            <h5 style="color:darkgoldenrod;">{{comment.name}}</h5>
-                            <p style="color: rgb(161, 161, 161);">{{comment.company}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-                </div>
-            </div>
+    <div class="container">
+        <div class="section-header text-center">
+            <br><br>
+            <p>Comentarios</p>
+            <h2 style="color: cornsilk;">Testimonios</h2>
         </div>
 
+        <!-- Inicio Nuevo Carrusel-->
+        <div class="my-carrousel">
+            <div class="testimonials-carousel-wrap">
+                <div class="listing-carousel-button listing-carousel-button-next" style="text-align: center;">
+                    <i class="fa fa-caret-right" style="color: #fff"></i>
+                </div>
+                <div class="listing-carousel-button listing-carousel-button-prev" style="text-align: center;">
+                    <i class="fa fa-caret-left" style="color: #fff"></i>
+                </div>
+                <div class="testimonials-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <!--first-->
+                            <div *ngFor="let comment of comments" class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="{{comment.image}}"></div>
+                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p>{{comment.comment}}</p>
+                                        <a href="#" class="text-link"></a>
+                                        <div class="testimonials-avatar">
+                                            <h3>{{comment.name}}</h3>
+                                            <h4>{{comment.company}}</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                                </div>
+                            </div>
+                            <!--end elemento-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tc-pagination" style="text-align: center;"></div>
+            </div>
+        </div>
+        <!-- Fin nuevo Carrusel-->
 
     </div>
 
