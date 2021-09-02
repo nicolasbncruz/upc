@@ -3,12 +3,12 @@
         {
             "id": 1,
             "name": "Big Data",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "description": "La importancia del big data no gira en torno a la cantidad de datos que tienes, sino en lo que haces con ellos. Puedes tomar datos de cualquier fuente y analizarlos para encontrar respuestas que permitan 1) reducir los costos, 2) reducir el tiempo, 3) desarrollar nuevos productos y optimizar las ofertas, y 4) tomar decisiones inteligentes. ",
             "image": "assets/img/service-1.jpg",
             "project": [
                 {
                     "id": 1,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "description": "Los datos bien administrados y confiables conducen a un analítica y decisiones confiables. Para seguir siendo competitivas, las empresas necesitan aprovechar todo el valor del big data y operar de una manera basada en los datos, tomando decisiones basadas en la evidencia presentada por los grandes datos en lugar de en el instinto visceral. Los beneficios de ser impulsado por los datos son claros. Las organizaciones basadas en datos se desempeñan mejor, son operacionalmente más predecibles y son más rentables.",
                     "name": "project Biglog",
                     "image": "assets/img/portfolio-1.jpeg"
                 }
@@ -17,12 +17,12 @@
         {
             "id": 2,
             "name": "Machine Learning",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "description": "Es una forma de la IA que permite a un sistema aprender de los datos en lugar de aprender mediante la programación explícita. Sin embargo, machine learning no es un proceso sencillo. Conforme el algoritmo ingiere datos de entrenamiento, es posible producir modelos más precisos basados en datos. Un modelo de machine learning es la salida de información que se genera cuando entrena su algoritmo de machine learning con datos.",
             "image": "assets/img/service-2.jpg",
             "project": [
                 {
                     "id": 2,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "description": "Aprovechar algoritmos y modelos para predecir resultados. Es importante asegurarse de que los científicos de datos que realizan el trabajo usen los algoritmos correctos, asimilando los datos más apropiados (que sean precisos y limpios) y utilizando los mejores modelos de rendimiento. Si todos estos elementos se reúnen, es posible entrenar continuamente al modelo y explotar los resultados aprendiendo de los datos. La automatización de este proceso de modelado, entrenamiento del modelo y pruebas conduce a predicciones precisas para dar soporte a los cambios empresariales.",
                     "name": "project automation",
                     "image": "assets/img/portfolio-2.jpeg"
                 }
@@ -31,12 +31,12 @@
         {
             "id": 3,
             "name": "Arquitectura Cloud",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "description": "La arquitectura de nube constituye la forma en la que se integran las distintas tecnologías para crear las nubes, es decir, los entornos de TI que extraen, agrupan y comparten los recursos escalables en una red. Define cómo se conectan todos los elementos y las funciones que se necesitan para diseñar una nube y obtener una plataforma en línea en la que se puedan ejecutar las aplicaciones.",
             "image": "assets/img/service-3.jpg",
             "project": [
                 {
                     "id": 3,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "description": "Si bien la arquitectura de nube varía en función de sus objetivos, la mayoría de las nubes necesita el hardware, el middleware, la gestión y el software de automatización. Además, la mayoría utiliza la virtualización para extraer los recursos de hardware y convertirlos en lagos de datos que se gestionan de forma centralizada. Por otro lado, algunas nubes (conocidas como las nubes sin sistema operativo) conectan a los clientes directamente con el hardware.",
                     "name": "project azure",
                     "image": "assets/img/portfolio-3.jpeg"
                 }
@@ -45,12 +45,12 @@
         {
             "id": 4,
             "name": "Consultoría TI",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "description": "La consultoría TI se ha convertido en una herramienta estratégica para buscar eficiencia y eficacia. Un salto cualitativo para el crecimiento de los negocios. El mercado nos obliga a asumir cambios de una manera más frecuente que antaño y si te quedas inmovilizado, el futuro se presenta más aciago. El control de procesos, la automatización de tareas o la gestión colaborativa son algunos de los aspectos a mejorar en muchos negocios.",
             "image": "assets/img/service-4.jpg",
             "project": [
                 {
                     "id": 4,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "description": "Hemos perfeccionado la restricción de los tres vértices, «Triple Restricción» como pilar de nuestra gestión, y transformamos el triángulo en cuatro vértices, donde nuestro eje central, son las expectativas de cada cliente ya que cada caso es tomado de manera específica y tu eres el que nos determina los puntos más importantes del objetivo final del proyecto.",
                     "name": "project nexus",
                     "image": "assets/img/portfolio-4.jpeg"
                 }
@@ -59,12 +59,12 @@
         {
             "id": 5,
             "name": "Change Management",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "description": "Gestión de Cambio se define como la aplicación holística de un proceso estructurado y un conjunto de herramientas para liderar el lado humano del cambio. Esta metodología proporciona beneficios claros de negocio ligados a la optimización de resultados.",
             "image": "assets/img/service-5.jpg",
             "project": [
                 {
                     "id": 5,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "description": " A través de una Comunicación Efectiva, Patrocinio, Capacitación, Coaching y Manejo de Resistencia, los empleados son guiados para que puedan tomar la decisión de sumarse y apoyar el cambio. Los modelos de Gestión del Cambio proporcionan un enfoque repetible y riguroso para ayudar a las personas a avanzar y adoptar un cambio en su trabajo diario, que es lo que permite a los proyectos entregar resultados en última instancia.",
                     "name": "project squads",
                     "image": "assets/img/portfolio-5.jpeg"
                 }
@@ -73,14 +73,14 @@
         {
             "id": 6,
             "name": "E-Marketing",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "description": "Uso del Internet y de las capacidades de medios digitales para auxiliar en la venta de tus productos y servicios. Estas tecnologías digitales son una adición valiosa a las aproximaciones tradicionales del marketing, sin importar el tamaño y tipo de un negocio.",
             "image": "assets/img/service-6.jpg",
             "project": [
                 {
-                    "id": 1,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "id": 6,
+                    "description": "Resultado de la unión entre las más modernas tecnologías de comunicación con los principios del marketing o mercadotecnia que conocemos de toda la vida.",
                     "name": "project marketing",
-                    "image": "assets/img/portfolio-1.jpeg"
+                    "image": "assets/img/portfolio-6.jpeg"
                 }
             ]
         }

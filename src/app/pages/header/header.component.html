@@ -62,7 +62,7 @@
 <div class="nav-bar" [ngStyle]="{'display':esDashboard()? 'none':'block'}">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <a href="#" class="navbar-brand">MENU</a>
+            <a onclick="window.scroll(0,0)" routerLink="login" class="navbar-brand">INGRESE</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -83,7 +83,7 @@
                         </div>
                     </div> -->
                     <a onclick="window.scroll(0,0)" routerLink="contacto" class="nav-item nav-link">Contacto</a>
-                            
+
                     <div class="container">
                         <div class="row">
 
@@ -101,22 +101,7 @@
                                     <li><a class="dropdown-item" routerLink="admin/client/new">Registrar Cliente</a>
                                     </li>
                                     <li><a class="dropdown-item" routerLink="admin/client/list">Listar Clientes</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-submenu">
-                                        <a tabindex="-1" routerLink="admin/project/new">Hover me for more options</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a tabindex="-1" routerLink="admin/project/new">Second level</a></li>
-                                            <li class="dropdown-submenu">
-                                                <a href="#">Even More..</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">3rd level</a></li>
-                                                    <li><a href="#">3rd level</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Second level</a></li>
-                                            <li><a href="#">Second level</a></li>
-                                        </ul>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -145,7 +130,7 @@
                 <a class="nav-link" routerLink="/">Million Consulting <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="dashboard">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" routerLink="dashboard">Datos del cliente <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['/dashboard/clientes']">Clientes</a>
@@ -178,4 +163,3 @@
 // (function () {
 // });
 </script>
-

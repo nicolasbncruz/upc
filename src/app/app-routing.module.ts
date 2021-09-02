@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { DashboarComponent } from './dashboar/dashboar.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
@@ -9,12 +8,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ClientesComponent } from './clientes/clientes.component';
-import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
+
+import { ClientListComponent } from './admin/client/client-list/client-list.component';
+import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { ProjectNewComponent } from './admin/project/project-new/project-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { LoginComponent } from './auth/login/login.component';
-import { ClientNewComponent } from './admin/client/client-new/client-new.component';
-
+import { RegisterComponent } from './auth/register/register.component';
+import { ProjectListComponent } from './admin/project/project-list/project-list.component';
+import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -26,12 +28,18 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboarComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'dashboard/clientes', component: ClientesComponent },
-  { path: 'admin/project/project-detail', component: ProjectDetailComponent },
+
+  { path: 'listarClientes', component: ClientListComponent},
+  { path: 'crearCliente', component: ClientNewComponent},
+  { path: 'admin/project/new', component: ProjectNewComponent},
   { path: 'servicio/:id', component: DetalleServiceComponent },
   { path: 'admin/project/new', component: ProjectNewComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'admin/project/new', component: ProjectNewComponent },
-  { path: 'admin/client/new', component: ClientNewComponent }
+  { path: 'registro', component: RegisterComponent },
+  { path: 'admin/client/new', component: ClientNewComponent },
+  { path: 'admin/project/list', component: ProjectListComponent},
+  { path: 'admin/project/upd', component: ProjectUpdateComponent}
+
 ];
 
 @NgModule({

@@ -1,76 +1,83 @@
+<<<<<<< HEAD
+<div class="container" style="padding-top: 50px;">
+    <div class="row justify-content-md-center">
+        <h2>
+            REGISTRO DE CLIENTES
+        </h2>
+    </div>
 
-<!-- Page Header End -->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form [formGroup]="clienteForm">
+                <div class="row-6 p-2 bg-light border">
+                    <h5>DATOS DE LA EMPRESA</h5>
+                    <div class="form-group">
+                        <input type="text"  class="form-control" placeholder="RUC">
+                    </div>
+                    <div class="form-group">
+                        <input type="text"  class="form-control" placeholder="Razón social">
+                    </div>
+                    <div class="form-group">
+                        <input type="email"  class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row-6 p-2 bg-light border mt-4">
+                    <h5>DATOS DEL CLIENTE</h5>
+                    <div class="form-group">
+                        <input type="text" formControlName="textNombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="textApePaterno" class="form-control" placeholder="Ape. Paterno">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="textApeMaterno" class="form-control" placeholder="Ape. Materno">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-select" aria-label="Default select example" formControlName="textTipoDoc">
+                            <option [ngValue]="null" disabled >Selecciona tipo doc.</option>
+                            <option *ngFor="let itemTipoDoc of listTipoDoc" [ngValue]="itemTipoDoc.id">
+                                {{itemTipoDoc.name}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="textNumeroDoc" class="form-control" placeholder="Número de Doc.">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" formControlName="textEmailContacto" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" formControlName="textTelfCelular" class="form-control" placeholder="Telf. Celular">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-right align-self-end ">
+                        <button class="btn btn-primary" routerLink="/listarClientes" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 50px;margin-left: 0;color: rgba(255,255,255,0.9);">
+                            Regresar
+                        </button>
+                        <button class="btn btn-primary" (click)="__onSubmit()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 50px;margin-left: 0;color: rgba(255,255,255,0.9);">
+                            Enviar
+                        </button>
+                        <button class="btn btn-primary" (click)="__onClear()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 0;margin-left: 0;color: rgba(255,255,255,0.9);">
+                            Limpiar
+                        </button>
+                    </div>
+                </div>
 
-<div class="contact wow fadeInUp">
-    <div class="container">
-        <div class="section-header text-center" style="color: rgb(0,0,0);">
-            <h2>Registrar Cliente</h2>
+                <!--
+                <div>
+                    <p>
+                        Datos del formulario: {{ clienteForm.value | json }}
+                    </p>
+                    <p>
+                        Formulario valido: {{ clienteForm.valid }}
+                    </p>
+                </div>
+                -->
+            </form>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="section-header text-center">
-                    <h1 style="color: #ffa555;">Datos del cliente</h1>
-                </div>
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form [formGroup]="clientForm" name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="company" formControlName="company" placeholder="Nombres" required="required"
-                                data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="area" formControlName="area" placeholder="Apellidos" required="required"
-                                data-validation-required-message="Please enter your service" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectManager" formControlName="projectManager" placeholder="DNI"
-                                required="required" data-validation-required-message="Please enter a project type" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="service" formControlName="service" placeholder="correo electrónico"
-                                required="required" data-validation-required-message="Please enter a project phase" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="section-header text-center">
-                    <h1>Solicitud de registro</h1>
-                </div>
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form [formGroup]="clientForm" name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Razón" required="required"
-                                data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectType" formControlName="projectType" placeholder="Tipos de proyectos"
-                                required="required" data-validation-required-message="Please enter a project type" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="projectPhase" formControlName="projectPhase" placeholder="Permisos"
-                                required="required" data-validation-required-message="Please enter a project phase" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="initDate" formControlName="initDate" placeholder="Prioridades" required="required"
-                                data-validation-required-message="Please enter your service" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button (click)="__onSubmit()" class="btn" type="submit" id="sendMessageButton">Registrar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <div class="col-3"></div>
     </div>
 </div>
+
