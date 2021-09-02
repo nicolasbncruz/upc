@@ -14,12 +14,12 @@
                     <div style="text-align: right;">
                         <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
                             <select  class="form-control form-control-sm" formControlName="companyId" required="required" style="color: rgb(0,0,0);" >
-                                <option value="" selected="">Filtrar Empresa</option>
+                                <option value="" selected="">TODAS</option>
                                 <option *ngFor="let c of companies"  value={{c.id}}>{{c.name}}</option>
                         
                             </select>
                         </form>
-                        <a class="btn" role="button" (click)="__getCompaniesByName(projectForm.value.companyId)" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(241, 168, 11);margin: 15px;margin-right: 10;margin-left: 0;color: rgba(1, 3, 1, 0.623);">
+                        <a class="btn" role="button" (click)="__onSubmit()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(241, 168, 11);margin: 15px;margin-right: 10;margin-left: 0;color: rgba(1, 3, 1, 0.623);">
                             BUSCAR
                         </a>
                     
