@@ -1,5 +1,6 @@
 import { Component, NgModule, OnInit } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { CompanyService } from 'src/app/services/company.service';
 
 import { ProjectService } from 'src/app/services/project.service';
 
@@ -10,7 +11,7 @@ import { ProjectService } from 'src/app/services/project.service';
 })
 export class EstadisticaComponent implements OnInit {
   view: [number, number] = [600, 400];
-  
+
 
   // options
   showLegend: boolean = true;
@@ -21,26 +22,28 @@ export class EstadisticaComponent implements OnInit {
   };
   single = [
     {
-      "name": "Big Log",
-      "value": 78
+      "name": "Progreso",
+      "value": 40
     },
-   
+
   ];
 
   projects: any = [];
+  companies: any = [];
   company: any;
-  
 
-  constructor(private readonly ps: ProjectService) {
+
+  constructor(private readonly ps: ProjectService,
+    private readonly cs: CompanyService) {
     // Object.assign(this, { single });
-  
+
   }
 
-  onSelect(event:any) {
+  onSelect(event: any) {
     console.log(event);
   }
 
-  
+
   view2: [number, number] = [1000, 400];
 
   // options
@@ -53,19 +56,19 @@ export class EstadisticaComponent implements OnInit {
   single2 = [
     {
       "name": "Culminado",
-      "value": 300
+      "value": 30
     },
     {
       "name": "En progreso",
-      "value": 700
+      "value": 70
     },
     // {
     //   "name": "Pendiente",
     //   "value": 20
     // },
-      
+
   ];
-   
+
   single3 = [
     {
       "name": "Culminado",
@@ -73,13 +76,13 @@ export class EstadisticaComponent implements OnInit {
     },
     {
       "name": "En progreso",
-      "value": 20
+      "value": 50
     },
-    {
-      "name": "Pendiente",
-      "value": 30
-    },
-      
+    // {
+    //   "name": "Pendiente",
+    //   "value": 30
+    // },
+
   ];
   single4 = [
     {
@@ -94,14 +97,14 @@ export class EstadisticaComponent implements OnInit {
       "name": "Pendiente",
       "value": 0
     },
-      
+
   ];
   single5 = [
     {
       "name": "Culminado",
       "value": 70
     },
-   
+
   ];
 
   onSelect2(data: any): void {
@@ -116,31 +119,48 @@ export class EstadisticaComponent implements OnInit {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
 
-onResize(event: any) {
+  onResize(event: any) {
     this.view = [event.target.innerWidth / 1.35, 400];
-}
-
-ngGetProjectsByIdCompany(id: number) {
-
-  this.ps.getProjects().subscribe((rest: any) => {
-  
-  this.projects = rest.data.filter((item: { companyId: number }) => item.companyId == id);
-  console.log(rest.data);
-  })
-  
   }
 
-  obtenerProyectos() {
-
+  ngGetProjectsByIdCompany(id: number) {
     this.ps.getProjects().subscribe((rest: any) => {
-    console.log(rest.data);
-    this.projects = rest.data;
+      this.projects = rest.data.filter((item: { companyId: number }) => item.companyId == id);
+      //console.log("datos del proyecto por idEmpresa");
+      //console.log("Mi coleccion" + JSON.stringify(rest.data));
     })
-    }
-  
+  }
+
+  ngGetEmpresasById(id: number) {
+    this.cs.getCompanies().subscribe((rest: any) => {
+      this.companies = rest.data.filter((item: { id: number }) => item.id == id);
+      //console.log("datos del proyecto por idEmpresa");
+      //console.log("Mi coleccion" + JSON.stringify(rest.data));
+    })
+  }
+
+
+  obtenerProyectos() {
+    this.ps.getProjects().subscribe((rest: any) => {
+      console.log(rest.data);
+      this.projects = rest.data;
+    })
+  }
+
+  obtenerEmrpesas() {
+    this.cs.getCompanies().subscribe((rest: any) => {
+      console.log(rest.data);
+      this.companies = rest.data;
+    })
+  }
+
   ngOnInit(): void {
-    this.ngGetProjectsByIdCompany(1)
+    /*this.ngGetProjectsByIdCompany(1);
+    this.ngGetEmpresasById(1);
     console.log(this.projects);
+    this.obtenerEmrpesas();*/
+    // console.log("Mi coleccion" + JSON.stringify(this.projects));
+    console.log("Mi empresa" + JSON.stringify(this.companies));
   }
 }
 

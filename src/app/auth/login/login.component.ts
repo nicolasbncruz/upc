@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
       console.log(this.contactusForm.value);
       Swal.fire({ icon: 'success', title: 'Te has logueado con éxito', showConfirmButton: false, timer: 1500 });
       // Swal.fire({ icon: 'success', title: 'Te has logueado con éxito', showConfirmButton: true });
-      this.router.navigate(['dashboard']);
+      this.router.navigate(['estadistica']);
     } else {
       Swal.fire({ icon: 'error', title: 'Por favor llene sus datos correctamente', text: 'datos no válidos' });
     }

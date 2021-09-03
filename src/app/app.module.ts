@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -26,7 +27,10 @@ import { ClientNewComponent } from './admin/client/client-new/client-new.compone
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 
-
+//npm install @swimlane/ngx-charts --save
+//npm install @ angular / cdk --save
+//npm uninstall @swimlane/ngx-charts
+//npm install @ angular / cdk --save
 
 @NgModule({
   declarations: [
