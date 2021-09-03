@@ -24,6 +24,7 @@ import { ClientListComponent } from './admin/client/client-list/client-list.comp
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
+import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
 
 
 
@@ -48,7 +49,8 @@ import { ProjectUpdateComponent } from './admin/project/project-update/project-u
     ClientListComponent,
     ClientNewComponent,
     DetalleServiceComponent,
-    ProjectUpdateComponent
+    ProjectUpdateComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
