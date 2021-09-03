@@ -1,0 +1,63 @@
+{
+    "data": [
+        
+        {
+            "mid": 1,
+            "projectid":12,
+            "mname": "Aprobación de documento de alcance",
+            "mprogress": "100%",
+            "mfentrega": "15/06/2021",
+            "mffin": "15/06/2021"
+        },
+        {
+            "mid": 2,
+            "projectid":12,
+            "mname": "Aprobación de prototipo",
+            "mprogress": "100%",
+            "mfentrega": "20/06/2021",
+            "mffin": "20/06/2021"
+        },
+        {
+            "mid": 3,
+            "projectid":12,
+            "mname": "Autenticación",
+            "mprogress": "40%",
+            "mfentrega": "07/07/2021",
+            "mffin": "07/06/2021"
+        },
+        {
+            "mid": 4,
+            "projectid":12,
+            "mname": "Formulario de registro de pedidos",
+            "mprogress": "0%",
+            "mfentrega": "22/07/2021",
+            "mffin": ""
+        },
+        {
+            "mid": 5,
+            "projectid":12,
+            "mname": "Integración de pasarela de pagos",
+            "mprogress": "0%",
+            "mfentrega": "08/08/2021",
+            "mffin": ""
+        },
+        {
+            "mid": 6,
+            "projectid":12,
+            "mname": "Módulo de feedback",
+            "mprogress": "0%",
+            "mfentrega": "02/10/2021",
+            "mffin": ""
+        },
+        {
+            "mid": 7,
+            "projectid":12,
+            "mname": "Módulo de administración",
+            "mprogress": "0%",
+            "mfentrega": "07/11/2021",
+            "mffin": ""
+        }
+   
+        
+    ]
+}

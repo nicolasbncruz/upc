@@ -1,0 +1,119 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>
+        Detalle de Proyecto
+    </h3>
+    <p>
+        A continuación se muestra el detalle del proyecto seleccionado:
+    </p>
+    <div class="row">
+        <div class="col-6" *ngFor="let p of projects">
+            <form [formGroup]="projectDetailForm">
+                <div class="control-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="projectName" name="projectName" value={{p.name}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Resumen </label>
+                    <textarea class="form-control" id="projectResume" name="projectResume" value={{p.description}} disabled></textarea>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Fecha de Implementación Deseada</label>
+                    <input type="text" class="form-control" id="projectClientDt" name="projectClientDt" value={{p.projectClientDt}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Tipo de Proyecto</label>
+                    <input type="text" class="form-control" id="projectType" name="projectType" value={{p.serviceDescription}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Gestor Asignado</label>
+                    <input type="text" class="form-control" id="projectManager" name="projectManager" value={{p.projectManager}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Fecha de Creación</label>
+                    <input type="text" class="form-control" id="projectCreateDt" name="projectCreateDt" value={{p.projectCreateDt}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Fecha de Inicio Planificada</label>
+                    <input type="text" class="form-control" id="projectIniPlanDt" name="projectIniPlanDt" value={{p.projectIniPlanDt}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Fecha de Inicio Real</label>
+                    <input type="text" class="form-control" id="projectIniRealDt" name="projectIniRealDt" value={{p.projectIniRealDt}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Fecha de Fin Planificada</label>
+                    <input type="text" class="form-control" id="projectEndPlanDt" name="projectEndPlanDt" value={{p.projectEndPlanDt}} disabled>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label>Fecha de fin real</label>
+                    <input type="text" class="form-control" id="projectEndRealDt" name="projectEndRealDt" value={{p.projectEndRealDt}} disabled>
+                </div>
+                <br>
+                
+                <div class="control-group">
+                    <label>Avance General</label>
+                    <input type="text" class="form-control" id="projectProgress" name="projectProgress" value={{p.projectProgress}} disabled>
+                </div>
+                <br>
+                
+                <div class="control-group">
+                    <label>Estado</label>
+                    <input type="text" class="form-control" id="projectStatus" name="projectStatus" value={{p.projectStatus}} disabled>
+                </div>
+                <br>
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                          HITOS
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Hito</th>
+                                    <th scope="col">% Avance</th>
+                                    <th scope="col">Fecha Entrega Planificada</th>
+                                    <th scope="col">Fecha Entrega Real</th>
+                                </tr>
+                                </thead>
+                                <tbody *ngFor="let m of milestones">
+                                  <tr > 
+                                    <td data-label="Hito">{{m.mname}}</td>
+                                    <td data-label="Avance">{{m.mprogress}}
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar"  [ngStyle]="{'width':m.mprogress}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div></td>
+                                    <td data-label="FechaFinPlan">{{m.mfentrega}}</td>
+                                    <td data-label="FechaFinReal">{{m.mffin}}</td>
+                                  </tr>
+                                
+
+                                </tbody>
+                              </table>                            
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

@@ -27,12 +27,8 @@ import { ClientNewComponent } from './admin/client/client-new/client-new.compone
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
+import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
 
-
-//npm install @swimlane/ngx-charts --save
-//npm install @ angular / cdk --save
-//npm uninstall @swimlane/ngx-charts
-//npm install @ angular / cdk --save
 
 @NgModule({
   declarations: [
@@ -56,7 +52,8 @@ import { ProjectUpdateComponent } from './admin/project/project-update/project-u
     ClientNewComponent,
     DetalleServiceComponent,
     EstadisticaComponent,
-    ProjectUpdateComponent
+    ProjectUpdateComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
