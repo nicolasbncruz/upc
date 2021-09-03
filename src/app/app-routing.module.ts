@@ -15,8 +15,11 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
+import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -28,7 +31,6 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboarComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'dashboard/clientes', component: ClientesComponent },
-
   { path: 'admin/cliente/list', component: ClientListComponent},
   { path: 'admin/cliente/new', component: ClientNewComponent},
   { path: 'admin/project/new', component: ProjectNewComponent},
@@ -36,10 +38,13 @@ const routes: Routes = [
   { path: 'admin/project/new', component: ProjectNewComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegisterComponent },
-  
-  { path: 'admin/project/list', component: ProjectListComponent},
-  { path: 'admin/project/upd', component: ProjectUpdateComponent}
-
+  { path: 'admin/project/new', component: ProjectNewComponent },
+  { path: 'admin/client/new', component: ClientNewComponent },
+  { path: 'estadistica', component: EstadisticaComponent },  
+  { path: 'admin/project/list', component: ProjectListComponent },
+  { path: 'admin/project/upd', component: ProjectUpdateComponent },
+  { path: 'admin/project/list/:id', component: ProjectListComponent },
+  { path: 'admin/project/project-detail/:id', component: ProjectDetailComponent },
 ];
 
 @NgModule({

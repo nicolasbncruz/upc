@@ -5,49 +5,73 @@
             "name": "Barbarian",
             "ruc": "204563218479",
             "image": "assets/img/client-barbarian.png",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "project": [
+                {
+                    "id": 1,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project Biglog",
+                    "image": "assets/img/portfolio-1.jpeg",
+                    "progress": 70,
+                    "serviceId": 1
+                },
+                {
+                    "id": 2,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+                    "name": "project automation",
+                    "image": "assets/img/portfolio-2.jpeg",
+                    "progress": 50,
+                    "serviceId": 2
+                }
+            ]
         },
         {
             "id": 2,
             "name": "Chazki",
             "ruc": "204563218479",
             "image": "assets/img/client-chazki.png",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "idproject": 2
         },
         {
             "id": 3,
             "name": "Promart",
             "ruc": "204563218479",
             "image": "assets/img/client-promart.png",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "idproject": 3
         },
         {
             "id": 4,
             "name": "Innova Schools",
             "ruc": "204563218479",
             "image": "assets/img/client-innova.png",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "idproject": 4
         },
         {
             "id": 5,
             "name": "Juntoz",
             "ruc": "204563218479",
             "image": "assets/img/client-juntoz.png",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "idproject": 4
         },
         {
             "id": 6,
             "name": "Stabilo",
             "ruc": "204563218479",
             "image": "assets/img/client-stabilo.png",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "idproject": 5
         },
         {
             "id": 7,
             "name": "Nuqa",
             "ruc": "204563218479",
             "image": "assets/img/client-nuqa.jpg",
-            "dirección": "lima 123"
+            "dirección": "lima 123",
+            "idproject": 6
         }
     ]
 }

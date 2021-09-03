@@ -5,35 +5,385 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project Biglog",
             "image": "assets/img/portfolio-1.jpeg",
-            "serviceId": 1
+            "progress": 70,
+            "serviceId": 1,
+            "serviceDescription": "Big Data",
+            "companyName": "Barbarian",
+            "companyId": 1,
+            "projectClientDt":"05/03/2021",
+            "projectManager":"Renato Cáceres Ruíz",
+            "projectCreateDt" : "15/02/2021",
+            "projectIniPlanDt" : "20/02/2021",
+            "projectIniRealDt" : "19/02/2021",
+            "projectEndPlanDt" : "01/03/2021",
+            "projectEndRealDt" : "05/03/2021",            
+            "projectStatus" : "Culminado",
+            "projectProgress" : "100%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
         },
         {
             "id": 2,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project automation",
             "image": "assets/img/portfolio-2.jpeg",
-            "serviceId": 2
+            "progress": 50,
+            "serviceId": 2,
+            "serviceDescription":"Machine Learning",
+            "companyName": "Chazki",
+            "companyId": 2,
+            "projectClientDt":"15/04/2021",
+            "projectManager":"Ursula Mendoza Calle",
+            "projectCreateDt" : "07/01/2021",
+            "projectIniPlanDt" : "18/01/2021",
+            "projectIniRealDt" : "20/01/2021",
+            "projectEndPlanDt" : "15/04/2021",
+            "projectEndRealDt" : "17/04/2021",            
+            "projectStatus" : "Culminado",
+            "projectProgress" : "100%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
         },
         {
             "id": 3,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project azure",
             "image": "assets/img/portfolio-3.jpeg",
-            "serviceId": 3
+            "progress": 10,
+            "serviceId": 3,
+            "serviceDescription":"Arquitectura Cloud",
+            "companyName": "Promart",
+            "companyId": 3,
+            "projectClientDt"  :"01/03/2021",
+            "projectManager"  :"Renato Cáceres Ruíz",
+            "projectCreateDt"  : "20/12/2020",
+            "projectIniPlanDt" : "10/01/2021",
+            "projectIniRealDt" : "05/01/2021",
+            "projectEndPlanDt" : "08/03/2021",
+            "projectEndRealDt" : "07/03/2021",            
+            "projectStatus" : "Culminado",
+            "projectProgress" : "100%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
         },
         {
             "id": 4,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project nexus",
             "image": "assets/img/portfolio-4.jpeg",
-            "serviceId": 4
+            "progress": 30,
+            "serviceId": 4,
+            "serviceDescription":"Consultoría TI",
+            "companyName": "Innova Schools",
+            "companyId": 4,
+            "projectClientDt":"07/09/2021",
+            "projectManager":"Leonor Razuri Rivera",
+            "projectCreateDt" : "03/04/2021",
+            "projectIniPlanDt" : "15/04/2021",
+            "projectIniRealDt" : "15/04/2021",
+            "projectEndPlanDt" : "07/09/2021",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "En curso",
+            "projectProgress" : "94%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
         },
         {
             "id": 5,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
             "name": "project squads",
             "image": "assets/img/portfolio-5.jpeg",
-            "serviceId": 5
+            "progress": 50,
+            "serviceId": 5,
+            "serviceDescription":"Change Management",
+            "companyName": "Juntoz",
+            "companyId": 5,
+            "projectClientDt":"07/09/2021",
+            "projectManager":"Leonor Razuri Rivera",
+            "projectCreateDt" : "03/04/2021",
+            "projectIniPlanDt" : "15/04/2021",
+            "projectIniRealDt" : "15/04/2021",
+            "projectEndPlanDt" : "07/09/2021",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "En curso",
+            "projectProgress" : "94%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "co-work",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 1,
+            "serviceDescription": "Big Data",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"08/10/2021",
+            "projectManager":"Leonor Razuri Rivera",
+            "projectCreateDt" : "15/05/2021",
+            "projectIniPlanDt" : "10/06/2021",
+            "projectIniRealDt" : "12/06/2021",
+            "projectEndPlanDt" : "",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "En curso",
+            "projectProgress" : "34%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "Control Vacunas",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 1,
+            "serviceDescription": "Big Data",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"01/05/2021",
+            "projectManager":"Renato Cáceres Ruíz",
+            "projectCreateDt" : "09/01/2021",
+            "projectIniPlanDt" : "16/01/2021",
+            "projectIniRealDt" : "16/01/2021",
+            "projectEndPlanDt" : "28/04/2021",
+            "projectEndRealDt" : "29/04/2021",            
+            "projectStatus" : "Culminado",
+            "projectProgress" : "100%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "co-work",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 2,
+            "serviceDescription":"Machine Learning",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"08/10/2021",
+            "projectManager":"Renato Cáceres Ruíz",
+            "projectCreateDt" : "31/08/2021",
+            "projectIniPlanDt" : "",
+            "projectIniRealDt" : "",
+            "projectEndPlanDt" : "",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "No iniciado",
+            "projectProgress" : "0%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "co-work",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 3,
+            "serviceDescription":"Arquitectura Cloud",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"12/12/2021",
+            "projectManager":"Ursula Mendoza Calle",
+            "projectCreateDt" : "03/03/2021",
+            "projectIniPlanDt" : "01/04/2021",
+            "projectIniRealDt" : "02/04/2021",
+            "projectEndPlanDt" : "10/12/2021",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "En curso",
+            "projectProgress" : "17%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "co-work",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 4,
+            "serviceDescription":"Consultoría TI",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"28/07/2021",
+            "projectManager":"Ursula Mendoza Calle",
+            "projectCreateDt" : "30/01/2021",
+            "projectIniPlanDt" : "15/02/2021",
+            "projectIniRealDt" : "15/02/2021",
+            "projectEndPlanDt" : "20/07/2021",
+            "projectEndRealDt" : "15/07/2021",            
+            "projectStatus" : "Culminado",
+            "projectProgress" : "34%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "co-work",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 4,
+            "serviceDescription":"Consultoría TI",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"08/10/2021",
+            "projectManager":"Leonor Razuri Rivera",
+            "projectCreateDt" : "15/05/2021",
+            "projectIniPlanDt" : "10/06/2021",
+            "projectIniRealDt" : "12/06/2021",
+            "projectEndPlanDt" : "",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "En curso",
+            "projectProgress" : "34%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+            "name": "co-work",
+            "image": "assets/img/portfolio-6.jpeg",
+            "serviceId": 4,
+            "serviceDescription":"Consultoría TI",
+            "companyName": "Stabilo",
+            "companyId": 6,
+            "projectClientDt":"08/10/2021",
+            "projectManager":"Renato Cáceres Ruíz",
+            "projectCreateDt" : "15/05/2021",
+            "projectIniPlanDt" : "10/06/2021",
+            "projectIniRealDt" : "12/06/2021",
+            "projectEndPlanDt" : "",
+            "projectEndRealDt" : "",            
+            "projectStatus" : "En curso",
+            "projectProgress" : "34%",
+            "milestone": [
+                {
+                    "mid": 1,
+                    "mname": "Aprobación de documento de alcance",
+                    "mprogress": "100%",
+                    "mfentrega": "15/06/2021",
+                    "mffin": "15/06/2021"
+                },
+                {
+                    "mid": 2,
+                    "mname": "Aprobación de prototipo",
+                    "mprogress": "100%",
+                    "mfentrega": "20/06/2021",
+                    "mffin": "20/06/2021"
+                },
+                {
+                    "mid": 3,
+                    "mname": "Autenticación",
+                    "mprogress": "40%",
+                    "mfentrega": "07/07/2021",
+                    "mffin": "07/06/2021"
+                },
+                {
+                    "mid": 4,
+                    "mname": "Formulario de registro de pedidos",
+                    "mprogress": "0%",
+                    "mfentrega": "22/07/2021",
+                    "mffin": ""
+                },
+                {
+                    "mid": 5,
+                    "mname": "Integración de pasarela de pagos",
+                    "mprogress": "0%",
+                    "mfentrega": "08/08/2021",
+                    "mffin": ""
+                },
+                {
+                    "mid": 6,
+                    "mname": "Módulo de feedback",
+                    "mprogress": "0%",
+                    "mfentrega": "02/10/2021",
+                    "mffin": ""
+                },
+                {
+                    "mid": 7,
+                    "mname": "Módulo de administración",
+                    "mprogress": "0%",
+                    "mfentrega": "07/11/2021",
+                    "mffin": ""
+                }
+            ]
         }
+   
+        
     ]
 }
