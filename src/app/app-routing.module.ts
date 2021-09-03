@@ -29,14 +29,14 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'dashboard/clientes', component: ClientesComponent },
 
-  { path: 'listarClientes', component: ClientListComponent},
-  { path: 'crearCliente', component: ClientNewComponent},
+  { path: 'admin/cliente/list', component: ClientListComponent},
+  { path: 'admin/cliente/new', component: ClientNewComponent},
   { path: 'admin/project/new', component: ProjectNewComponent},
   { path: 'servicio/:id', component: DetalleServiceComponent },
   { path: 'admin/project/new', component: ProjectNewComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegisterComponent },
-  { path: 'admin/client/new', component: ClientNewComponent },
+  
   { path: 'admin/project/list', component: ProjectListComponent},
   { path: 'admin/project/upd', component: ProjectUpdateComponent}
 
