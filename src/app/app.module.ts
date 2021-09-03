@@ -26,6 +26,8 @@ import { ClientListComponent } from './admin/client/client-list/client-list.comp
 import { ClientNewComponent } from './admin/client/client-new/client-new.component';
 import { DetalleServiceComponent } from './pages/servicios/detalle-service/detalle-service.component';
 import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
+import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
+
 
 //npm install @swimlane/ngx-charts --save
 //npm install @ angular / cdk --save
@@ -53,7 +55,8 @@ import { EstadisticaComponent } from './pages/estadistica/estadistica.component'
     ClientListComponent,
     ClientNewComponent,
     DetalleServiceComponent,
-    EstadisticaComponent
+    EstadisticaComponent,
+    ProjectUpdateComponent
   ],
   imports: [
     BrowserModule,

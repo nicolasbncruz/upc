@@ -39,7 +39,8 @@
 
 .carousel__elemento {
 	text-align: center;
-	color: rgb(2, 0, 0)
+	color: rgb(2, 0, 0);
+    padding: 20px;
 }
 
 .carousel__indicadores .glider-dot {
