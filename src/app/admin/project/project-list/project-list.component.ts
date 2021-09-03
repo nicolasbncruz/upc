@@ -26,15 +26,19 @@ export class ProjectListComponent implements OnInit {
 
   obtenerProyectos(){
     let x: number = this.route.snapshot.params['id'];
-
-this.__getProjectsByCompany(x);
-/*    this.ps.getProjects().subscribe((rest: any) => {
-    this.projects = rest.data;
-    console.log(this.projects);
-
-    })*/
+    this.__getProjectsByCompany(x);
   }
 
+
+/*
+  obtenerProyectos(){
+    this.ps.getProjects().subscribe((rest: any) => {
+      this.projects = rest.data;
+      console.log(this.projects);
+
+    })
+  }
+*/
   obtenerEmpresas(){
     this.cs.getCompanies().subscribe((rest: any) => {
       this.companies = rest.data;
@@ -64,7 +68,7 @@ this.__getProjectsByCompany(x);
   ngOnInit(): void {
     this.obtenerProyectos();
     this.obtenerEmpresas();
-    }
+  }
 
 
   __getProjectsByCompany(id: number) {
@@ -97,9 +101,6 @@ this.__getProjectsByCompany(x);
       this.projects = rest.data.filter((item: { serviceId: number }) => item.serviceId == id);
     })
   }
-
-  
-
 
   __getCompaniesById(id: number) {
     this.cs.getCompanies().subscribe((rest: any) => {
