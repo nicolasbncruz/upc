@@ -52,7 +52,7 @@ export class ProjectNewComponent implements OnInit {
     if(this.projectForm.valid){
       console.log(this.projectForm.value);
       Swal.fire({ icon: 'success', title: 'Proyecto ingresado con éxito', showConfirmButton: false, timer: 2500 });
-      this.router.navigate(['admin/project/list']);
+      this.router.navigate(['admin/project/list/0']);
     }else{
 
       Swal.fire({ icon: 'error', title: 'Por favor complete todos los datos obligatorios', text: 'datos no válidos' });
