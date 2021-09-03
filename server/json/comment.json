@@ -3,50 +3,26 @@
         {
             "id": 1,
             "rating": 5,
-            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat.",
+            "comment": "Los proyectos en Million Consulting fueron acertados para mi empresa.",
             "image": "assets/img/testimonial-1.jpg",
-            "name": "Ena Shah",
-            "company": "Teacher at Abc School"
+            "name": "Jorge Tucto",
+            "company": "Nuqa"
         },
         {
             "id": 2,
             "rating": 4,
-            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat.",
+            "comment": "Million Consulting tiene una experiencia en el mercado de TI en la que se puede confiar tus proyectos de transformación digital.",
             "image": "assets/img/testimonial-2.jpg",
-            "name": "Mrs. Gosh",
-            "company": "Actor"
+            "name": "Marleny Juarez",
+            "company": "Innova School"
         },
         {
             "id": 3,
             "rating": 5,
-            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat.",
+            "comment": "Million consulting cuenta con profesionales de alto nivel, los proyectos realizados tienen buen nivel de calidad y se preocupan con las entregas a tiempo.",
             "image": "assets/img/testimonial-3.jpg",
-            "name": "John Doe",
+            "name": "Roberto Romero",
             "company": "Model"
-        },
-        {
-            "id": 4,
-            "rating": 5,
-            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat.",
-            "image": "assets/img/testimonial-4.jpg",
-            "name": "Jonathan Smith",
-            "company": "Creative Designer"
-        },
-        {
-            "id": 5,
-            "rating": 4,
-            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat.",
-            "image": "assets/img/testimonial-1.jpg",
-            "name": "Sara A. K.",
-            "company": "Heroine"
-        },
-        {
-            "id": 6,
-            "rating": 5,
-            "comment": "Lorem ipsum dolor sit amet onsetetur sadipscing elitr, sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat.",
-            "image": "assets/img/testimonial-2.jpg",
-            "name": "David Smith",
-            "company": "Businessman"
         }
     ]
 }
