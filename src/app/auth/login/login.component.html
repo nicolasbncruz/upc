@@ -31,23 +31,24 @@
         </div>
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
             <p class="card-text">Déjanos tus datos para que te contacte uno de nuestros Ejecutivos de Ventas.</p>
-            <form [formGroup]="contactusForm">
+            <form [formGroup]="aFormGroup">
                 <div class="form-group">
                     <input type="email" formControlName="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <input type="password" formControlName="password" class="form-control" placeholder="Contraseña">
                 </div>
+                <div class="form-group">
+                    <ngx-recaptcha2 [siteKey]="sitekey" formControlName="recaptcha"></ngx-recaptcha2>
+                </div>
             </form>
         </div>
         <div class="card-footer bg-transparent"
             style="text-align: center; padding-left: 40px; padding-right: 40px; margin-bottom: 0%;">
-            <div class="form-group">
-                <div class="btn bg-warning mb-3" style="width: 100%;">
-                    <a onclick="window.scroll(0,0)" (click)="__onSubmit()" type="button" class="download-btns"
-                        class="btn btn-outlin-primary" data-wow-delay=".6s">ENVIAR
-                    </a>
-                </div>
+            <div (click)="__onSubmit()" onclick="window.scroll(0,0)" type="button" class="btn bg-warning mb-3"
+                style="width: 100%;">
+                <a class="download-btns" class="btn btn-outlin-primary" data-wow-delay=".6s">ENVIAR
+                </a>
             </div>
         </div>
     </div>

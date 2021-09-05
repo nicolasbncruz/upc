@@ -19,6 +19,7 @@ import { EstadisticaComponent } from './pages/estadistica/estadistica.component'
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
 import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
+import { ConditionsComponent } from './auth/conditions/conditions.component';
 
 
 const routes: Routes = [
@@ -47,6 +48,7 @@ const routes: Routes = [
   { path: 'admin/project/upd', component: ProjectUpdateComponent },
   { path: 'admin/project/list/:id', component: ProjectListComponent },
   { path: 'admin/project/project-detail/:id', component: ProjectDetailComponent },
+  { path: 'registro/terminosycondiciones', component: ConditionsComponent },
 ];
 
 @NgModule({

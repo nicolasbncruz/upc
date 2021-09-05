@@ -9,7 +9,6 @@
                     Million Consulting se compromete a proteger la seguridad de su información. Sus datos se mantendrán
                     de forma segura de acuerdo a nuestra política de privacidad de datos.
                 </p>
-                <!-- <a class="btn" href="">Learn More</a> -->
             </div>
         </div>
         <div class="container-image">
@@ -30,9 +29,8 @@
             </h2>
         </div>
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
-            <!-- <h5 class="card-title">Déjanos tus datos para que te contacte uno de nuestros Ejecutivos de Ventas.</h5> -->
             <p class="card-text">Déjanos tus datos para que te contacte uno de nuestros Ejecutivos de Ventas.</p>
-            <form [formGroup]="registerForm">
+            <form [formGroup]="aFormGroup">
                 <div class="form-group">
                     <input type="text" formControlName="firstName" class="form-control" placeholder="Primer nombre">
                 </div>
@@ -46,16 +44,18 @@
                     <input type="text" formControlName="phone" class="form-control" placeholder="Teléfono">
                 </div>
                 <div class="form-group">
-
+                    <ngx-recaptcha2 [siteKey]="sitekey" formControlName="recaptcha"></ngx-recaptcha2>
+                </div>
+                <div class="form-group" style="align-items: center;">
+                    <input type="checkbox" formControlName="conditions" class="form-check-input">
+                    <p> Acepto los <a routerLink="terminosycondiciones" target="_blank">términos y condiciones</a></p>
                 </div>
             </form>
         </div>
         <div class="card-footer bg-transparent"
             style="text-align: center; padding-left: 40px; padding-right: 40px; margin-bottom: 0%;">
-            <!-- <button (click)="__onSubmit()" class="btn btn-outline-primary">Enviar</button> -->
-            <div class="btn bg-warning mb-3" style="width: 100%;">
-                <a (click)="__onSubmit()" type="button" class="download-btns" class="btn btn-outlin-primary"
-                    data-wow-delay=".6s">ENVIAR
+            <div (click)="__onSubmit()" type="button" class="btn bg-warning mb-3" style="width: 100%;">
+                <a class="download-btns" class="btn btn-outlin-primary" data-wow-delay=".6s">ENVIAR
                 </a>
             </div>
         </div>
@@ -85,70 +85,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-<!-- 
-<div class="container" style="padding-top: 120px;">
-    <h3>
-        Contáctenos
-    </h3>
-    <p>
-        Ingrese la siguiente información para contactarse con nosotros:
-    </p>
-    <div class="row">
-        <div class="col-6">
-            <form [formGroup]="contactusForm">
-                <div formGroupName="person">
-                    <div class="form-group">
-                        <input type="text" formControlName="firstName" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" formControlName="lastName" class="form-control" placeholder="Apellido">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="email" formControlName="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <textarea formControlName="message" class="form-control" rows="3" placeholder="Mensaje"></textarea>
-                </div>
-                <div class="form-group">
-                    <button (click)="__onSubmit()" class="btn btn-outline-primary">Enviar</button>
-                </div>
-                <div>
-                    <p>
-                        Datos del formulario: {{ contactusForm.value | json }}
-                    </p>
-                    <p>
-                        Formulario Valido: {{ contactusForm.valid }}
-                    </p>
-                </div>
-            </form>
-        </div>
-        <div class="col-6">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1181837144877!2d-76.96509068546669!3d-12.104060991429169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses-419!2spe!4v1629688027407!5m2!1ses-419!2spe"
-                width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="row">
-
-                <div class="col-2">
-                    <b>Dirección:</b>
-                </div>
-                <div class="col-10">
-                    Prolongación Primavera 2390, Lima 15023
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <b>Telefono:</b>
-                </div>
-                <div class="col-10">
-                    (01) 123-4567
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->

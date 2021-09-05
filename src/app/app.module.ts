@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { DetalleServiceComponent } from './pages/servicios/detalle-service/detal
 import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
 import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
+import { ConditionsComponent } from './auth/conditions/conditions.component';
 
 
 @NgModule({
@@ -53,14 +55,16 @@ import { ProjectDetailComponent } from './admin/project/project-detail/project-d
     DetalleServiceComponent,
     EstadisticaComponent,
     ProjectUpdateComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ConditionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxChartsModule
+    NgxChartsModule,
+    NgxCaptchaModule
   ],
   providers: [
   ],

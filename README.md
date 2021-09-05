@@ -7,13 +7,29 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ***
 * ## 1. Para levantar la Aplicación:
 
-Agregar el `node_modules` package
+1.1. Agregar el `node_modules` package
 ```sh
 npm install
 ```
-Agregar `nodemon` package
+1.2. Agregar `nodemon` package
 ```sh
 npm install -g nodemon
+```
+1.3. Agregar `sweetalert2` package
+```sh
+npm install --save sweetalert2
+```
+1.4. Agregar `angular cdk` package
+```sh
+npm install @angular/cdk --save
+```
+1.5. Agregar `ngx charts` package
+```sh
+npm install @swimlane/ngx-charts --save
+```
+1.6. Agregar `captcha` package
+```sh
+npm i ngx-captcha
 ```
 ***
 * ## 2. Para iniciar el server del api rest en 4001

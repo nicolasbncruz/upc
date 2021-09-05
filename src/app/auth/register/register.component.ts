@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Client } from 'src/app/models/client';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -9,27 +10,35 @@ import Swal from 'sweetalert2';
 })
 export class RegisterComponent implements OnInit {
 
-  registerForm = this.fb.group({
-    firstName: ['', [Validators.required]],
-    lastName: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
-    phone: ['', Validators.required]
+  aFormGroup: FormGroup;
+  client: Client;
+  sitekey: string = "6LfHukccAAAAANl68zGFUxZZyKoxfPxag9n3MFLb";
 
-  });
+  ngOnInit() {
+    this.aFormGroup = this.fb.group({
+      firstName: ['', [Validators.required]],
+      lastName: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      phone: ['', Validators.required],
+      conditions: [false, Validators.required],
+      recaptcha: ['', Validators.required]
+    });
+  }
 
   constructor(private fb: FormBuilder) { }
 
   __onSubmit() {
-    if (this.registerForm.valid) {
-      console.log(this.registerForm.value);
+    if (this.aFormGroup.valid && this.aFormGroup.value.conditions == true) {
+      console.log(this.aFormGroup.value);
       Swal.fire({ icon: 'success', title: 'Te has registrado con éxito', showConfirmButton: true });
-      this.registerForm.reset();
+      this.aFormGroup.reset();
+    } else if (this.aFormGroup.valid && this.aFormGroup.value.conditions == false) {
+      Swal.fire({ icon: 'error', title: null, text: 'Debe aceptar los términos y condiciones' });
     } else {
       Swal.fire({ icon: 'error', title: 'Datos incorrectos', text: 'datos no válidos' });
     }
   }
 
-  ngOnInit(): void {
-  }
+
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Client } from 'src/app/models/client';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -10,17 +11,24 @@ import Swal from 'sweetalert2';
 })
 export class LoginComponent implements OnInit {
 
-  contactusForm = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required]
-  });
+  aFormGroup: FormGroup;
+  client: Client;
+  sitekey: string = "6LfHukccAAAAANl68zGFUxZZyKoxfPxag9n3MFLb";
 
-  constructor(private fb: FormBuilder,
+  constructor(private formBuilder: FormBuilder,
     private router: Router) { }
 
+  ngOnInit() {
+    this.aFormGroup = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required],
+      recaptcha: ['', Validators.required]
+    });
+  }
+
   __onSubmit() {
-    if (this.contactusForm.valid) {
-      console.log(this.contactusForm.value);
+    if (this.aFormGroup.valid) {
+      console.log(this.aFormGroup.value);
       Swal.fire({ icon: 'success', title: 'Te has logueado con éxito', showConfirmButton: false, timer: 1500 });
       // Swal.fire({ icon: 'success', title: 'Te has logueado con éxito', showConfirmButton: true });
       this.router.navigate(['estadistica']);
@@ -29,7 +37,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
+
 
 }
