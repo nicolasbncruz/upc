@@ -22,7 +22,31 @@
             "comment": "Million consulting cuenta con profesionales de alto nivel, los proyectos realizados tienen buen nivel de calidad y se preocupan con las entregas a tiempo.",
             "image": "assets/img/testimonial-3.jpg",
             "name": "Roberto Romero",
-            "company": "Model"
+            "company": "Chazki"
+        },
+        {
+            "id": 4,
+            "rating": 5,
+            "comment": "Million consulting cuenta con profesionales de alto nivel, los proyectos realizados tienen buen nivel de calidad y se preocupan con las entregas a tiempo.",
+            "image": "assets/img/testimonial-3.jpg",
+            "name": "Jose Fernandez",
+            "company": "Stabilo"
+        },
+        {
+            "id": 5,
+            "rating": 5,
+            "comment": "Million consulting cuenta con profesionales de alto nivel, los proyectos realizados tienen buen nivel de calidad y se preocupan con las entregas a tiempo.",
+            "image": "assets/img/testimonial-3.jpg",
+            "name": "Carlos Vignolo",
+            "company": "Juntoz"
+        },
+        {
+            "id": 6,
+            "rating": 5,
+            "comment": "Million consulting cuenta con profesionales de alto nivel, los proyectos realizados tienen buen nivel de calidad y se preocupan con las entregas a tiempo.",
+            "image": "assets/img/testimonial-3.jpg",
+            "name": "Andres Vasquez",
+            "company": "Barbarian"
         }
     ]
 }

@@ -128,10 +128,7 @@
                     <p align="justify">
                         Nos encontramos con clientes dondequiera que se encuentren en su camino hacia el cambio, en
                         todas las industrias del mundo, y nos asociamos con ellos para generar un valor a largo plazo.
-                        <!-- Las nuevas tecnologías y modelos comerciales pueden transformar la forma en que la comunidad de
-                        desarrollo internacional atiende a las personas necesitadas. Million Consulting ayuda a las
-                        organizaciones de este sector a aumentar drásticamente su impacto en áreas como la atención
-                        médica global, la educación, la inclusión financiera y el acceso a la energía. -->
+
                     </p>
                     <a onclick="window.scroll(0,0)" class="btn" routerLink="nosotros" href="">Leer más</a>
                 </div>
@@ -187,24 +184,15 @@
         <p>Owners</p>
         <h2>Nuestros Clientes</h2>
     </div>
-    <!-- Inicio Carrusel-->
-    <div class="carousel__contenedor">
-        <button aria-label="Anterior" class="carousel__anterior">
-            <i class="fas fa-chevron-left">Anterior</i>
-        </button>
-        <div class="carousel__lista">
-            <div *ngFor="let company of companies" class="carousel__elemento">
-                <img src="{{company.image}}" alt="Rock and Roll Hall of Fame">
-                <!-- <p>{{company.name}}</p> -->
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="col" *ngFor="let company of companies">
+            <div class="card h-80">
+                <img src="{{company.image}}" class="card-img-top" alt="...">
+                <div class="card-body">                    
+                </div>
             </div>
         </div>
-        <button aria-label="Siguiente" class="carousel__siguiente">
-            <i class="fas fa-chevron-right">Siguiente</i>
-        </button>
     </div>
-    <div role="tablist" class="carousel__indicadores"></div>
-    <!-- Fin Carrusel-->
-
 </div>
 <!-- Nuestros Clientes End -->
 

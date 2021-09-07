@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ReCaptcha2Component } from 'ngx-captcha';
 import { Client } from 'src/app/models/client';
 import Swal from 'sweetalert2';
 
@@ -25,18 +27,22 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+    private router: Router) { }
 
   __onSubmit() {
     if (this.aFormGroup.valid && this.aFormGroup.value.conditions == true) {
       console.log(this.aFormGroup.value);
-      Swal.fire({ icon: 'success', title: 'Te has registrado con éxito', showConfirmButton: true });
       this.aFormGroup.reset();
+      //window.location.reload();   
+      
+      Swal.fire({ icon: 'success', title: 'Te has registrado con éxito', showConfirmButton: true, timer: 2500 });
     } else if (this.aFormGroup.valid && this.aFormGroup.value.conditions == false) {
       Swal.fire({ icon: 'error', title: null, text: 'Debe aceptar los términos y condiciones' });
     } else {
       Swal.fire({ icon: 'error', title: 'Datos incorrectos', text: 'datos no válidos' });
     }
+
   }
 
 

@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   sitekey: string = "6LfHukccAAAAANl68zGFUxZZyKoxfPxag9n3MFLb";
 
   constructor(private formBuilder: FormBuilder,
-    private router: Router) { }
+              private router: Router) { }
 
   ngOnInit() {
     this.aFormGroup = this.formBuilder.group({
