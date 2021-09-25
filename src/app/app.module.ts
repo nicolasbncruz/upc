@@ -7,6 +7,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Services
+import { ProjectService } from './services/project.service';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -30,6 +33,7 @@ import { EstadisticaComponent } from './pages/estadistica/estadistica.component'
 import { ProjectUpdateComponent } from './admin/project/project-update/project-update.component';
 import { ProjectDetailComponent } from './admin/project/project-detail/project-detail.component';
 import { ConditionsComponent } from './auth/conditions/conditions.component';
+
 
 @NgModule({
   declarations: [
@@ -67,6 +71,7 @@ import { ConditionsComponent } from './auth/conditions/conditions.component';
     BrowserAnimationsModule
   ],
   providers: [
+    ProjectService
   ],
   bootstrap: [AppComponent]
 })

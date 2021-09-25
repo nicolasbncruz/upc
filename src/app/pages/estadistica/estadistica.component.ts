@@ -16,17 +16,19 @@ export class EstadisticaComponent implements OnInit {
   showLegend: boolean = true;
   showLabels: boolean = true;
   promedio: number = 0;
-  projects: Project[];
+  misproyectos: Project[];
   companies: Company[];
   company: Company;
+  mapaProjects = new Map();
 
   constructor(private readonly projectService: ProjectService,
     private readonly companyService: CompanyService) { }
 
   ngOnInit(): void {
     this.ngGetProjectsByIdCompany(1);
-    console.log("1 El promedio es: " + this.promedio);
-    console.log("Proyectos por idEmpresa 2" + JSON.stringify(this.projects));
+    console.log(this.mapaProjects);
+    console.log(this.mapaProjects.size);
+    console.log(this.mapaProjects);
   }
 
   onSelect(event: any) {
@@ -43,7 +45,7 @@ export class EstadisticaComponent implements OnInit {
     }
   ];
 
-  view2: [number, number] = [800, 400];
+  view2: [number, number] = [400, 400];
 
   // options
   gradient: boolean = true;
@@ -52,14 +54,12 @@ export class EstadisticaComponent implements OnInit {
 
   ngGetProjectsByIdCompany(id: number) {
     this.projectService.getProjects().subscribe((rest: any) => {
-      this.projects = rest.data.filter((item: { companyId: number }) => item.companyId == id);
-      console.log("Proyectos por idEmpresa" + JSON.stringify(this.projects));
-      console.log("2 El promedio es: " + this.promedio);
-      console.log(this.projects.length);
-      this.promedio = this.obtenerPromedio(this.projects);
-      console.log("3 El promedio es: " + this.promedio);
+      this.misproyectos = rest.data.filter((item: { companyId: number }) => item.companyId == id);
+      for (let project of this.misproyectos) {
+        this.mapaProjects.set(project.id, project);
+      }
+      this.promedio = this.obtenerPromedio(this.misproyectos);
     })
-    console.log("4 El promedio es: " + this.promedio);
   }
 
   obtenerPromedio(projects: Project[]): number {
@@ -68,7 +68,8 @@ export class EstadisticaComponent implements OnInit {
       suma += project.progress;
     }
     console.log(suma / projects.length);
-    return suma / projects.length;
+    this.promedio = suma / projects.length;
+    return this.promedio;
   }
 
 
