@@ -6,3 +6,13 @@ C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.A
 C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.CoreCompileInputs.cache
 C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
 C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.deps.json
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.AssemblyReference.cache
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.GeneratedMSBuildEditorConfig.editorconfig
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.AssemblyInfoInputs.cache
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.AssemblyInfo.cs
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.CoreCompileInputs.cache
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb

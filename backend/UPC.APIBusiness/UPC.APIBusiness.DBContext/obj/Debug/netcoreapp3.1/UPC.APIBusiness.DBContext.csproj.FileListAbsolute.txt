@@ -1,0 +1,13 @@
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.deps.json
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.AssemblyReference.cache
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.GeneratedMSBuildEditorConfig.editorconfig
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.AssemblyInfoInputs.cache
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.AssemblyInfo.cs
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CoreCompileInputs.cache
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CopyComplete
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
+D:\UPC\upc\backend\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb

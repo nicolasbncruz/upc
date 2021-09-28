@@ -10,6 +10,7 @@ using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
+//using UPC.APIBusiness.API.Security;
 
 namespace UPC.Business.API.Controllers
 {
@@ -37,23 +38,46 @@ namespace UPC.Business.API.Controllers
 
         }
 
+
         /// <summary>
-        /// GetListUser
+        /// 
         /// </summary>
+        /// <param name="login"></param>
         /// <returns></returns>
         [Produces("application/json")]
-        [SwaggerOperation("GetListUser")]
         [AllowAnonymous]
-        [HttpGet]
-        [Route("GetListUser")]
-        public ActionResult Get()
+        [HttpPost]
+        [Route("login")]
+        public async Task<ActionResult> Login(EntityLogin login)
         {
-            var ret = _UserRepository.GetUsers();
+       
+                /*var responseLogin = ret.data as EntityLoginResponse;
+                var userdoc = responseLogin.documentoidentidad;
+                var usercod = responseLogin.idusuario.ToString();*/
 
-            if (ret == null)
-                return StatusCode(401);
+                //var token = JsonConvert.DeserializeObject<AccessToken>(await new Authentication().GenerateToken(userdoc, usercod)).access_token;
 
+                //responseLogin.token = token;
+                //ret.data = responseLogin;
+                var ret = _UserRepository.Login(login);
+                return Json(ret);
+           
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        [Produces("application/json")]
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("insert")]
+        public ActionResult Insert(EntityUser user)
+        {
+            var ret = _UserRepository.Insert(user);
             return Json(ret);
         }
+
     }
 }
