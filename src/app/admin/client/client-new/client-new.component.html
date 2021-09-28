@@ -16,27 +16,28 @@
         </div>
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
             <form [formGroup]="clienteForm">
-                <div class="control-group">
-                    <input type="text" class="form-control" placeholder="RUC"  
-						id="textRUC" formControlName="textRUC" required="required"
-                        data-validation-required-message="es un dato requerido"/>
-                    <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                    <input type="text" class="form-control" placeholder="Razón social"
-						id="textRazónSocial" formControlName="textRazónSocial" 
-                        required="required" data-validation-required-message="es un dato requerido" />
-                    <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                    <input type="text" class="form-control" placeholder="Email"
-						id="textEmail" formControlName="textEmail" 
-                        required="required" data-validation-required-message="es un dato requerido" />
-                    <p class="help-block text-danger"></p>
+                <div formGroupName="empresa">
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="RUC"  
+                            id="textRUC" formControlName="textRUC" required="required"
+                            data-validation-required-message="es un dato requerido"/>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="Razón social"
+                            id="textRazonSocial" formControlName="textRazonSocial" 
+                            required="required" data-validation-required-message="es un dato requerido" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="Email"
+                            id="textEmail" formControlName="textEmail" 
+                            required="required" data-validation-required-message="es un dato requerido" />
+                        <p class="help-block text-danger"></p>
+                    </div>
                 </div>
             </form>
         </div>
-
     </div>
     <br>
  
@@ -71,7 +72,7 @@
                 </div>
                 <div class="control-group">
                     <select class="form-control form-control-sm" formControlName="textTipoDoc" required="required" style="color: rgb(0,0,0);">
-                        <option value="" selected="">Seleccione Tipo Proyecto</option>
+                        <option value="" selected="">Seleccione Tipo Documento</option>
 						<option *ngFor="let itemTipoDoc of listTipoDoc" [ngValue]="itemTipoDoc.id">
 							{{itemTipoDoc.name}}
 						</option>
@@ -91,7 +92,7 @@
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="text" class="form-control" placeholder="Nombre" 
+                    <input type="text" class="form-control" placeholder="celular" 
                         id="textTelfCelular" formControlName="textTelfCelular" 
 						required="required" data-validation-required-message="es un dato requerido"  />
                     <p class="help-block text-danger"></p>

@@ -51,8 +51,8 @@
                         <tbody>
                             <tr *ngFor="let cliente of listarClientes">
                                 <td class="align-middle">{{cliente.item}}</td>
-                                <td class="align-middle">{{cliente.ruc}}</td>
-                                <td class="align-middle">{{cliente.razonSocial}}</td>
+                                <td class="align-middle">{{cliente.empresa.ruc}}</td>
+                                <td class="align-middle">{{cliente.empresa.razonSocial}}</td>
                                 <td class="align-middle">{{cliente.datosContacto}}</td>
                                 <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
                                 <td class="text-center"><a href="#" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
