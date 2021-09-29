@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class ClienteService {
 
-  constructor() { }
+  constructor(private readonly http: HttpClient) { }
+
+_getClientes(){
+  return this.http.get('/api/clientes');
+}
+
 }

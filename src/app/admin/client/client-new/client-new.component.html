@@ -1,82 +1,119 @@
-<div class="container" style="padding-top: 50px;">
-    <div class="row justify-content-md-center">
-        <h2>
-            REGISTRO DE CLIENTES
-        </h2>
-    </div>
-
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-            <form [formGroup]="clienteForm">
-                <div class="row-6 p-2 bg-light border">
-                    <h5>DATOS DE LA EMPRESA</h5>
-                    <div class="form-group">
-                        <input type="text"  class="form-control" placeholder="RUC">
-                    </div>
-                    <div class="form-group">
-                        <input type="text"  class="form-control" placeholder="Razón social">
-                    </div>
-                    <div class="form-group">
-                        <input type="email"  class="form-control" placeholder="Email">
-                    </div>
-                </div>
-                <div class="row-6 p-2 bg-light border mt-4">
-                    <h5>DATOS DEL CLIENTE</h5>
-                    <div class="form-group">
-                        <input type="text" formControlName="textNombre" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" formControlName="textApePaterno" class="form-control" placeholder="Ape. Paterno">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" formControlName="textApeMaterno" class="form-control" placeholder="Ape. Materno">
-                    </div>
-                    <div class="form-group">
-                        <select class="form-select" aria-label="Default select example" formControlName="textTipoDoc">
-                            <option [ngValue]="null" disabled >Selecciona tipo doc.</option>
-                            <option *ngFor="let itemTipoDoc of listTipoDoc" [ngValue]="itemTipoDoc.id">
-                                {{itemTipoDoc.name}}
-                            </option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" formControlName="textNumeroDoc" class="form-control" placeholder="Número de Doc.">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" formControlName="textEmailContacto" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" formControlName="textTelfCelular" class="form-control" placeholder="Telf. Celular">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-right align-self-end ">
-                        <button class="btn btn-primary" routerLink="/listarClientes" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 50px;margin-left: 0;color: rgba(255,255,255,0.9);">
-                            Regresar
-                        </button>
-                        <button class="btn btn-primary" (click)="__onSubmit()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 50px;margin-left: 0;color: rgba(255,255,255,0.9);">
-                            Enviar
-                        </button>
-                        <button class="btn btn-primary" (click)="__onClear()" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 0;margin-left: 0;color: rgba(255,255,255,0.9);">
-                            Limpiar
-                        </button>
-                    </div>
-                </div>
-
-                <!--
-                <div>
-                    <p>
-                        Datos del formulario: {{ clienteForm.value | json }}
-                    </p>
-                    <p>
-                        Formulario valido: {{ clienteForm.valid }}
-                    </p>
-                </div>
-                -->
-            </form>
+<div class="container" >
+    <div class="row" style="padding-top: 30px;">
+        <div class="section-header text-center" style="color: rgb(0,0,0);">
+            <h2>Registro de Clientes</h2>
         </div>
-        <div class="col-3"></div>
     </div>
 </div>
 
+<div class="container" style="padding-left: 265px;">
+
+    <div class="card bg-light mb-3" style="max-width: 38rem;">
+        <div class="card-header">
+            <h2 style="margin-bottom: 0px; text-align: center;">
+                Datos de la Empresa
+            </h2>
+        </div>
+        <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
+            <form [formGroup]="clienteForm">
+                <div formGroupName="empresa">
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="RUC"  
+                            id="textRUC" formControlName="textRUC" required="required"
+                            data-validation-required-message="es un dato requerido"/>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="Razón social"
+                            id="textRazonSocial" formControlName="textRazonSocial" 
+                            required="required" data-validation-required-message="es un dato requerido" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="Email"
+                            id="textEmail" formControlName="textEmail" 
+                            required="required" data-validation-required-message="es un dato requerido" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+ 
+</div>
+<div class="container" style="padding-left: 265px;">
+
+    <div class="card bg-light mb-3" style="max-width: 38rem;">
+        <div class="card-header">
+            <h2 style="margin-bottom: 0px; text-align: center;">
+                DATOS DEL CLIENTE
+            </h2>
+        </div>
+        <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
+            <form [formGroup]="clienteForm" name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                    <input type="text" class="form-control" placeholder="Nombre" 
+                        id="textNombre" formControlName="textNombre" 
+						required="required" data-validation-required-message="es un dato requerido"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" placeholder="Ape. Paterno" 
+                        id="textApePaterno" formControlName="textApePaterno" 
+						required="required" data-validation-required-message="es un dato requerido"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" placeholder="Ape. Materno" 
+                        id="textApeMaterno" formControlName="textApeMaterno" 
+						required="required" data-validation-required-message="es un dato requerido"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <select class="form-control form-control-sm" formControlName="textTipoDoc" required="required" style="color: rgb(0,0,0);">
+                        <option value="" selected="">Seleccione Tipo Documento</option>
+						<option *ngFor="let itemTipoDoc of listTipoDoc" [ngValue]="itemTipoDoc.id">
+							{{itemTipoDoc.name}}
+						</option>
+                    </select>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" placeholder="Número de Doc." 
+                        id="textNumeroDoc" formControlName="textNumeroDoc" 
+						required="required" data-validation-required-message="es un dato requerido"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" placeholder="Email" 
+                        id="textEmailContacto" formControlName="textEmailContacto" 
+						required="required" data-validation-required-message="es un dato requerido"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" placeholder="celular" 
+                        id="textTelfCelular" formControlName="textTelfCelular" 
+						required="required" data-validation-required-message="es un dato requerido"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+
+            </form>
+        </div>
+
+        
+        <div class="card-footer bg-transparent"
+            style="text-align: center; padding-left: 40px; padding-right: 40px; margin-bottom: 0%;">
+            <div class="form-group">
+                <div class="btn bg-warning mb-3" style="width: 40%;">
+                    <a onclick="window.scroll(0,0)" (click)="__onSubmit()" type="submit" class="btn"
+                        class="btn btn-outlin-primary" data-wow-delay=".6s">REGISTRAR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+ 
+</div>
+<br>
