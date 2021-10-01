@@ -17,32 +17,29 @@
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
             <form [formGroup]="projectForm">
                 <div class="control-group">
-                    <select  class="form-control form-control-sm" formControlName="company" required="required" style="color: rgb(0,0,0);" >
-                        <option value="" selected="">Seleccione Empresa</option>
-                        <option *ngFor="let c of companies" value={{c.idEmpresa}}>{{c.razonSocial}}</option>
+                    <select class="form-control form-control-sm" formControlName="idEmpresa" type="number" required="required" style="color: rgb(0,0,0);" >
+                        <option type="number" value=0 selected=0>Seleccione Empresa</option>
+                        <option type="number" *ngFor="let c of companies" [ngValue]="c.idEmpresa" >{{c.razonSocial}}</option>
                        
                     </select>
-                    <!--
-                    <input type="text" class="form-control" id="company" formControlName="company" placeholder="Empresa" required="required"
-                        data-validation-required-message="Please enter your name" />
-                    -->
+                    
                     <p class="help-block text-danger"></p>
                     
                 </div>
                 <div class="control-group">
-                    <input type="text" class="form-control" id="area" formControlName="area" placeholder="Área de la Empresa"  required="required"
+                    <input type="text" class="form-control" id="areaEmpresa" formControlName="areaEmpresa" placeholder="Área de la Empresa"  required="required"
                         data-validation-required-message="Please enter your service"/>
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="text" class="form-control" id="projectManager" formControlName="projectManager" placeholder="Jefe de Proyecto"
+                    <input type="text" class="form-control" id="jefeProyecto" formControlName="jefeProyecto" placeholder="Jefe de Proyecto"
                         required="required" data-validation-required-message="Please enter a project type" />
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <select class="form-control form-control-sm" formControlName="service" required="required" style="color: rgb(0,0,0);">
-                        <option value="" selected="">Seleccione Servicio</option>
-                        <option *ngFor="let s of services" >{{s.nombre}}</option>
+                    <select class="form-control form-control-sm" formControlName="idServicio" required="required" style="color: rgb(0,0,0);">
+                        <option type="number" value=0 selected="">Seleccione Servicio</option>
+                        <option type="number" *ngFor="let s of services" [ngValue]="s.idServicio">{{s.nombre}}</option>
                       
                     </select>
                     <p class="help-block text-danger"></p>
@@ -65,18 +62,18 @@
         <div class="card-body" style="padding-left: 40px; padding-right: 40px;">
             <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
                 <div class="control-group">
-                    <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Nombre Proyecto" required="required"
+                    <input type="text" class="form-control" id="nombreProyecto" formControlName="nombreProyecto" placeholder="Nombre Proyecto" required="required"
                         data-validation-required-message="Please enter your name"  />
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
                     
-                        <textarea class="form-control" rows="3" id="projectDescription" formControlName="projectDescription" placeholder="Descripción Proyecto" >
+                        <textarea class="form-control" rows="3" id="descripcion" formControlName="descripcion" placeholder="Descripción Proyecto" >
                             Ingrese Descripción del proyecto</textarea>
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <select class="form-control form-control-sm" formControlName="projectType" required="required" style="color: rgb(0,0,0);">
+                    <select class="form-control form-control-sm" formControlName="tipoProyecto" required="required" style="color: rgb(0,0,0);">
                         <option value="" selected="">Seleccione Tipo Proyecto</option>
                         <option>Agile</option>
                         <option>Cascade</option>
@@ -84,20 +81,30 @@
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="text" class="form-control" id="projectPhase" formControlName="projectPhase" placeholder="Fase de Proyecto"
+                    <input type="text" class="form-control" id="imagenProyecto" formControlName="imagenProyecto" placeholder="Ruta de la Imagen"
                         required="required" data-validation-required-message="Please enter a project phase" />
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="date" class="form-control" id="initDate" formControlName="initDate" placeholder="Fecha Inicio" required="required"
-                        data-validation-required-message="Please enter your service" />
+                    <input placeholder="Fecha Inicio Plan" class="form-control" type="text" onfocus="(this.type='date')" id="fechaInicioPlan" formControlName="fechaInicioPlan"
+                    equired="required" data-validation-required-message="Please enter your service">
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="date" class="form-control" id="endDate" formControlName="endDate" placeholder="Fecha Fin" required="required"
-                        data-validation-required-message="Please enter your service" />
+                    <input placeholder="Fecha Inicio Real" class="form-control" type="text" onfocus="(this.type='date')" id="fechaInicioReal" formControlName="fechaInicioReal"
+                    equired="required" data-validation-required-message="Please enter your service">
                     <p class="help-block text-danger"></p>
                 </div>
+                <div class="control-group">
+                    <input placeholder="Fecha Fin Plan" class="form-control" type="text" onfocus="(this.type='date')" id="fechaFinPlan" formControlName="fechaFinPlan"
+                    equired="required" data-validation-required-message="Please enter your service">
+                    <p class="help-block text-danger"></p>
+                </div><div class="control-group">
+                    <input placeholder="Fecha Fin Real" class="form-control" type="text" onfocus="(this.type='date')" id="fechaFinReal" formControlName="fechaFinReal"
+                    equired="required" data-validation-required-message="Please enter your service">
+                    <p class="help-block text-danger"></p>
+                </div>
+                
       
 
             </form>
@@ -114,6 +121,8 @@
                 </div>
             </div>
         </div>
+       
+
     </div>
     <br>
  

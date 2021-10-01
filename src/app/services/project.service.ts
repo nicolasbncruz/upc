@@ -14,4 +14,9 @@ export class ProjectService {
 
     return this.http.get('http://190.232.24.126/api/project/getprojects');
   }
+
+  insertProjects(data:any) {
+
+    return this.http.post<any>('http://190.232.24.126/api/project/admin/insert',data);
+  }
 }

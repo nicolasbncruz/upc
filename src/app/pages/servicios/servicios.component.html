@@ -25,18 +25,18 @@
                 [routerLink]="['/servicio/', service.id]" *ngFor="let service of services">
                 <div class="service-item">
                     <div class="service-img">
-                        <img src={{service.image}} alt="Image">
+                        <img src={{service.rutaArchivo}} alt="Image">
                         <div class="service-overlay">
                             <!-- <p>
                                     Comunicación directa con los usuarios a través de medios digitales.
                                 </p> -->
                             <p align="justify">
-                                {{service.description}}
+                                {{service.descripcion}}
                             </p>
                         </div>
                     </div>
                     <div class="service-text">
-                        <h3>{{service.name}}</h3>
+                        <h3>{{service.nombre}}</h3>
                         <!-- <a class="btn" href={{servicio.imagen}} data-lightbox="service">+</a> -->
                         <a class="btn">+</a>
                     </div>

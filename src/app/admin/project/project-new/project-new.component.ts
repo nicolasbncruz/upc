@@ -4,6 +4,7 @@ import { CompanyService } from 'src/app/services/company.service';
 import { ServicioService } from 'src/app/services/servicio.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { ProjectService } from 'src/app/services/project.service';
 
 
 @Component({
@@ -14,16 +15,18 @@ import Swal from 'sweetalert2';
 export class ProjectNewComponent implements OnInit {
 
   projectForm = this.fb.group({
-    company: ['', Validators.required],
-    area: ['', Validators.required],
-    projectManager: ['', Validators.required],
-    service: ['', Validators.required],
-    projectName: ['', Validators.required],
-    projectDescription: ['', Validators.required],
-    projectType: ['', Validators.required],
-    projectPhase: ['', Validators.required],
-    initDate: ['', Validators.required],
-    endDate: ['', Validators.required]
+    descripcion: ['', Validators.required],
+    tipoProyecto: ['', Validators.required],
+    idEmpresa: [0, Validators.required],
+    jefeProyecto: ['', Validators.required],
+    idServicio: [0, Validators.required],
+    fechaInicioPlan: ['', Validators.required],
+    fechaInicioReal: ['', Validators.required],
+    fechaFinPlan: ['', Validators.required],
+    fechaFinReal: ['', Validators.required],
+    imagenProyecto: ['', Validators.required],
+    areaEmpresa: ['', Validators.required],
+    nombreProyecto: ['', Validators.required]
 
   })
 
@@ -33,6 +36,7 @@ export class ProjectNewComponent implements OnInit {
   constructor(private fb: FormBuilder,
               private readonly cs: CompanyService,
               private readonly ss: ServicioService,
+              private readonly ps: ProjectService,
               private router: Router){ }
   
   obtenerEmpresas() {
@@ -50,11 +54,23 @@ export class ProjectNewComponent implements OnInit {
     })
   }
 
+  __insert(data:any){
+    this.ps.insertProjects(data).subscribe((rest:any) => {
+      if(rest.isSuccess){
+        Swal.fire({ icon: 'success', title: 'Proyecto creado con id: ' + rest.data.id, showConfirmButton: false, timer: 2500 });
+        this.router.navigate(['admin/project/list/0']);
+      } else {
+        Swal.fire({ icon: 'error', title: 'Error al insertar', text: 'Ocurrió un Error' });
+      }
+    })
+  }
+
   __onSubmit(){
     if(this.projectForm.valid){
-      console.log(this.projectForm.value);
-      Swal.fire({ icon: 'success', title: 'Proyecto ingresado con éxito', showConfirmButton: false, timer: 2500 });
-      this.router.navigate(['admin/project/list/0']);
+      //console.log(this.projectForm.value);
+      //Swal.fire({ icon: 'success', title: 'Proyecto ingresado con éxito', showConfirmButton: false, timer: 2500 });
+      //this.router.navigate(['admin/project/list/0']);
+      this.__insert(this.projectForm.value);
     }else{
 
       Swal.fire({ icon: 'error', title: 'Por favor complete todos los datos obligatorios', text: 'datos no válidos' });
