@@ -15,7 +15,7 @@
                         <form [formGroup]="projectForm" name="sentMessage" id="contactForm" novalidate="novalidate">
                             <select  class="form-control form-control-sm" formControlName="companyId" required="required" style="color: rgb(0,0,0);" >
                                 <option value="" selected="">TODAS</option>
-                                <option *ngFor="let c of companies"  value={{c.id}}>{{c.name}}</option>
+                                <option *ngFor="let c of companies"  value={{c.idEmpresa}}>{{c.razonSocial}}</option>
                         
                             </select>
                         </form>
@@ -42,9 +42,9 @@
                         </thead>
                         <tbody>
                             <tr *ngFor="let p of projects">
-                                <td class="align-middle">{{p.name}}</td>
-                                <td class="align-middle"><em>{{p.description}}</em><br></td>
-                                <td class="align-middle">{{p.companyName}}<br></td>
+                                <td class="align-middle">{{p.nombreProyecto}}</td>
+                                <td class="align-middle"><em>{{p.descripcion}}</em><br></td>
+                                <td class="align-middle">{{p.razonSocial}}<br></td>
                                 <td class="text-center"><a routerLink="/admin/project/upd" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
                                 <td class="text-center"><a href="#" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
                             </tr>

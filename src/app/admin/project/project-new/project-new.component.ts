@@ -19,9 +19,11 @@ export class ProjectNewComponent implements OnInit {
     projectManager: ['', Validators.required],
     service: ['', Validators.required],
     projectName: ['', Validators.required],
+    projectDescription: ['', Validators.required],
     projectType: ['', Validators.required],
     projectPhase: ['', Validators.required],
-    initDate: ['', Validators.required]
+    initDate: ['', Validators.required],
+    endDate: ['', Validators.required]
 
   })
 

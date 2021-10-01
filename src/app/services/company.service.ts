@@ -9,6 +9,6 @@ export class CompanyService {
   constructor(private readonly http: HttpClient) { }
 
   getCompanies() {
-    return this.http.get('/api/companies');
+    return this.http.get('http://190.232.24.126/api/company/getcompanies');
   }
 }

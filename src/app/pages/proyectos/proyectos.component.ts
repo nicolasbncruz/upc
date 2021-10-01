@@ -26,7 +26,7 @@ export class ProyectosComponent implements OnInit {
 
   ngGetProjectsByIdService(id: number) {
     this.ps.getProjects().subscribe((rest: any) => {
-      this.projects = rest.data.filter((item: { serviceId: number }) => item.serviceId == id);
+      this.projects = rest.data.filter((item: { idServicio: number }) => item.idServicio == id);
     })
   }
 

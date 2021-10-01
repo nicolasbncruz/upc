@@ -48,8 +48,10 @@ export class ProjectListComponent implements OnInit {
 
 
   __getCompaniesByName(id: number) {
+    
     this.ps.getProjects().subscribe((rest: any) => {
-      this.projects = rest.data.filter((item: { companyId: number }) => item.companyId == id);
+      this.projects = rest.data.filter((item: { idEmpresa: number }) => item.idEmpresa == id);
+      console.log(this.projects);
     
     })
   }
@@ -62,6 +64,8 @@ export class ProjectListComponent implements OnInit {
       
       this.obtenerProyectos();
     }
+    console.log(this.projectForm);
+    
 
   }
 
@@ -82,7 +86,7 @@ export class ProjectListComponent implements OnInit {
     }
     else{
       this.ps.getProjects().subscribe((rest: any) => {
-        this.projects = rest.data.filter((item: { companyId: number }) => item.companyId == id);
+        this.projects = rest.data.filter((item: { idEmpresa: number }) => item.idEmpresa == id);
       })
     } 
   }

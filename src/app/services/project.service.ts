@@ -12,6 +12,6 @@ export class ProjectService {
 
   getProjects(): Observable<any> {
 
-    return this.http.get('/api/projects');
+    return this.http.get('http://190.232.24.126/api/project/getprojects');
   }
 }

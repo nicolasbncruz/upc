@@ -9,6 +9,6 @@ export class ServicioService {
   constructor(private readonly http: HttpClient) { }
 
   getServices() {
-    return this.http.get('/api/services');
+    return this.http.get('http://190.232.24.126/api/service/getservices');
   }
 }

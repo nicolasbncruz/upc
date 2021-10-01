@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{93D8111E-70E7-4FF4-A16C-7853282EE3AC}|Default">
+  <MonoDevelop.Ide.ItemProperties.UPC.APIBusiness.UnitTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UPC.APIBusiness" expanded="True">
+            <Node name="UPC.APIBusiness.DBContext" expanded="True">
+              <Node name="Base" expanded="True" />
+            </Node>
+            <Node name="UPC.APIBusiness.DBEntity" expanded="True">
+              <Node name="Model" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,155 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.UnitTest\\UPC.APIBusiness.UnitTest.csproj": {}
+    "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.UnitTest/UPC.APIBusiness.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.API\\UPC.APIBusiness.API.csproj": {
+    "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBContext/UPC.APIBusiness.DBContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.API\\UPC.APIBusiness.API.csproj",
-        "projectName": "UPC.APIBusiness.API",
-        "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.API\\UPC.APIBusiness.API.csproj",
-        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.API\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {
-                "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj"
-              },
-              "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
-                "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[1.15.0, )"
-            },
-            "IdentityServer4": {
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "IdentityServer4.AccessTokenValidation": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-              "target": "Package",
-              "version": "[3.0.3, )"
-            },
-            "Microsoft.Extensions.Http.Polly": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
-            "NLog": {
-              "target": "Package",
-              "version": "[4.6.8, )"
-            },
-            "NSwag.Annotations": {
-              "target": "Package",
-              "version": "[13.8.2, )"
-            },
-            "Swashbuckle.AspNetCore.Swagger": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerGen": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerUI": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "System.DirectoryServices": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "System.IO.Packaging": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
+        "projectUniqueName": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBContext/UPC.APIBusiness.DBContext.csproj",
         "projectName": "UPC.APIBusiness.DBContext",
-        "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
-        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\obj\\",
+        "projectPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBContext/UPC.APIBusiness.DBContext.csproj",
+        "packagesPath": "/Users/alvarojesuscacerescavero/.nuget/packages/",
+        "outputPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBContext/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alvarojesuscacerescavero/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
-                "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj"
+              "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/UPC.APIBusiness.DBEntity.csproj": {
+                "projectPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/UPC.APIBusiness.DBEntity.csproj"
               }
             }
           }
@@ -196,31 +74,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
+    "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/UPC.APIBusiness.DBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
+        "projectUniqueName": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/UPC.APIBusiness.DBEntity.csproj",
         "projectName": "UPC.APIBusiness.DBEntity",
-        "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
-        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\obj\\",
+        "projectPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/UPC.APIBusiness.DBEntity.csproj",
+        "packagesPath": "/Users/alvarojesuscacerescavero/.nuget/packages/",
+        "outputPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alvarojesuscacerescavero/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -253,42 +126,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.UnitTest\\UPC.APIBusiness.UnitTest.csproj": {
+    "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.UnitTest/UPC.APIBusiness.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.UnitTest\\UPC.APIBusiness.UnitTest.csproj",
+        "projectUniqueName": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.UnitTest/UPC.APIBusiness.UnitTest.csproj",
         "projectName": "UPC.APIBusiness.UnitTest",
-        "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.UnitTest\\UPC.APIBusiness.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.UnitTest\\obj\\",
+        "projectPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.UnitTest/UPC.APIBusiness.UnitTest.csproj",
+        "packagesPath": "/Users/alvarojesuscacerescavero/.nuget/packages/",
+        "outputPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.UnitTest/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alvarojesuscacerescavero/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.API\\UPC.APIBusiness.API.csproj": {
-                "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.API\\UPC.APIBusiness.API.csproj"
+              "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.API/UPC.APIBusiness.API.csproj": {
+                "projectPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.API/UPC.APIBusiness.API.csproj"
               },
-              "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {
-                "projectPath": "C:\\Users\\James\\UPC\\2021\\202102\\IS250\\1. Material\\Proyecto - EA2A\\BackEnd\\UPC.APIBusiness\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj"
+              "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBContext/UPC.APIBusiness.DBContext.csproj": {
+                "projectPath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBContext/UPC.APIBusiness.DBContext.csproj"
               }
             }
           }
@@ -327,14 +195,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

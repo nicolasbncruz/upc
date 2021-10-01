@@ -19,7 +19,7 @@
                 <div class="control-group">
                     <select  class="form-control form-control-sm" formControlName="company" required="required" style="color: rgb(0,0,0);" >
                         <option value="" selected="">Seleccione Empresa</option>
-                        <option *ngFor="let c of companies">{{c.name}}</option>
+                        <option *ngFor="let c of companies" value={{c.idEmpresa}}>{{c.razonSocial}}</option>
                        
                     </select>
                     <!--
@@ -42,7 +42,7 @@
                 <div class="control-group">
                     <select class="form-control form-control-sm" formControlName="service" required="required" style="color: rgb(0,0,0);">
                         <option value="" selected="">Seleccione Servicio</option>
-                        <option *ngFor="let s of services">{{s.name}}</option>
+                        <option *ngFor="let s of services" >{{s.nombre}}</option>
                       
                     </select>
                     <p class="help-block text-danger"></p>
@@ -70,6 +70,12 @@
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
+                    
+                        <textarea class="form-control" rows="3" id="projectDescription" formControlName="projectDescription" placeholder="Descripción Proyecto" >
+                            Ingrese Descripción del proyecto</textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
                     <select class="form-control form-control-sm" formControlName="projectType" required="required" style="color: rgb(0,0,0);">
                         <option value="" selected="">Seleccione Tipo Proyecto</option>
                         <option>Agile</option>
@@ -84,6 +90,11 @@
                 </div>
                 <div class="control-group">
                     <input type="date" class="form-control" id="initDate" formControlName="initDate" placeholder="Fecha Inicio" required="required"
+                        data-validation-required-message="Please enter your service" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="date" class="form-control" id="endDate" formControlName="endDate" placeholder="Fecha Fin" required="required"
                         data-validation-required-message="Please enter your service" />
                     <p class="help-block text-danger"></p>
                 </div>
