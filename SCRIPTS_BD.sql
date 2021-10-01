@@ -2,9 +2,10 @@
 --TABLAS
 ----------------------------------------------------------------------
 
---DROP TABLE [EA2A-GRUPO2].dbo.TM_PROYECTO;
+DROP TABLE [EA2A-GRUPO2].dbo.TM_PROYECTO;
 CREATE TABLE [EA2A-GRUPO2].dbo.TM_PROYECTO (
 	IDPROYECTO int IDENTITY(1,1) NOT NULL,
+	NOMBREPROYECTO VARCHAR(50) NULL,
 	DESCRIPCION VARCHAR(500) NULL,
 	TIPOPROYECTO varchar(100) NULL,
 	IDEMPRESA int NULL,
@@ -16,6 +17,7 @@ CREATE TABLE [EA2A-GRUPO2].dbo.TM_PROYECTO (
 	FECHAFINPLAN varchar(20) NULL,
 	FECHAFINREAL varchar(20) NULL,
 	PROGRESOPROYECTO varchar(10) NULL,
+	IMAGENPROYECTO varchar(256) NULL,
 	ACTIVO bit NULL,
 	USUARIOCREA int NULL,
 	USUARIOMODIFICA int NULL,
@@ -25,18 +27,18 @@ CREATE TABLE [EA2A-GRUPO2].dbo.TM_PROYECTO (
 );
 
 
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',1,'Ventas','Juan Perez',1,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','100%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',2,'Marketing','Alvaro Caceres',2,'20/01/2021','29/01/2021','01/04/2021','05/04/2021','50%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Cascade',3,'Contabilidad','Paola rojas',3,'22/05/2021','01/06/2021','01/11/2021','05/11/2021','20%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',4,'Ventas','Nicolas Cruz',4,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','34%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',5,'Ventas','Warner David',5,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','46%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',6,'Marketing','Diego',6,'20/12/2020','23/12/2020','01/03/2021','05/03/2021','65%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',1,'Ventas','Jose Jose',1,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','34%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Cascade',2,'Tecnologia','Carlos Ciseneros',2,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','20%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',3,'Ventas','Jose Casinelli',3,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','87%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',4,'Marketing','Pedro Diaz',4,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','98%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',7,'Ventas','Carlos Alcantara',5,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','56%',1,1,null,getdate(),null);
-INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',7,'Ventas','Mario Juarez',6,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','76%',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT1','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',1,'Ventas','Juan Perez',1,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','100%','assets/img/portfolio-1.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT2','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',2,'Marketing','Alvaro Caceres',2,'20/01/2021','29/01/2021','01/04/2021','05/04/2021','50%','assets/img/portfolio-2.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT3','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Cascade',3,'Contabilidad','Paola rojas',3,'22/05/2021','01/06/2021','01/11/2021','05/11/2021','20%','assets/img/portfolio-3.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT4','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',4,'Ventas','Nicolas Cruz',4,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','34%','assets/img/portfolio-4.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT5','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',5,'Ventas','Warner David',5,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','46%','assets/img/portfolio-5.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT6','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',6,'Marketing','Diego',6,'20/12/2020','23/12/2020','01/03/2021','05/03/2021','65%','assets/img/portfolio-6.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT7','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',1,'Ventas','Jose Jose',1,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','34%','assets/img/portfolio-7.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT8','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Cascade',2,'Tecnologia','Carlos Ciseneros',2,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','20%','assets/img/portfolio-8.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT9','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',3,'Ventas','Jose Casinelli',3,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','87%','assets/img/portfolio-9.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT10','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',4,'Marketing','Pedro Diaz',4,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','98%','assets/img/portfolio-10.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT11','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',7,'Ventas','Carlos Alcantara',5,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','56%','assets/img/portfolio-11.jpeg',1,1,null,getdate(),null);
+INSERT INTO [EA2A-GRUPO2].dbo.TM_PROYECTO VALUES('PROJECT12','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Agile',7,'Ventas','Mario Juarez',6,'20/02/2021','19/02/2021','01/03/2021','05/03/2021','76%','assets/img/portfolio-12.jpeg',1,1,null,getdate(),null);
 
 SELECT * FROM [EA2A-GRUPO2].dbo.TM_PROYECTO 
 
@@ -246,14 +248,17 @@ GO
 
 
 USE [EA2A-GRUPO2];
-CREATE PROCEDURE dbo.sp_Million_ListarProyectos
+ALTER PROCEDURE dbo.sp_Million_ListarProyectos
 AS 
 	SELECT	P.IDPROYECTO,
+			P.NOMBREPROYECTO,
 			P.DESCRIPCION,
 			P.TIPOPROYECTO,
-			E.RAZONSOCIAL AS EMPRESA,
+			P.IDEMPRESA ,
+			E.RAZONSOCIAL,
 			P.AREAEMPRESA,
 			P.JEFEPROYECTO,
+			P.IDSERVICIO,
 			S.NOMBRE AS SERVICIO,
 			P.FECHAINICIOPLAN,
 			P.FECHAINICIOREAL,

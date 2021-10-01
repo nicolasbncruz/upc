@@ -7,6 +7,7 @@ namespace DBContext
 {
     public interface IUserRepository
     {
-        List<EntityUser> GetUsers();
+        BaseResponse Insert(EntityUser user);
+        BaseResponse Login(EntityLogin login);
     }
 }

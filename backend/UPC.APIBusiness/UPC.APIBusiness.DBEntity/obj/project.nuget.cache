@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "CAby4qgnTWGvFFD4/qoYrxSchlXd24hrYuOtQ/PsQdA7jZC7W+jqhhaiXNiRYsnbI5HFntevbaKrEESOwz6uaQ==",
   "success": true,
   "projectFilePath": "/Users/alvarojesuscacerescavero/Desktop/Proyecto_UPC_G2_V2/upc/backend/UPC.APIBusiness/UPC.APIBusiness.DBEntity/UPC.APIBusiness.DBEntity.csproj",
+=======
+  "dgSpecHash": "5we6LnVLEeXmvH6gZTSvgplEGhIks8Pt36FAe83urezqU+y+QxbzAVAGx6kQ846U7vlQ17gsceYNFaw2jpZ0CQ==",
+  "success": true,
+  "projectFilePath": "D:\\UPC\\upc\\backend\\UPC.APIBusiness\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
+>>>>>>> 642f23af4f68e9dd1b7de8b42d33f3724916e4ae
   "expectedPackageFiles": [],
   "logs": []
 }
