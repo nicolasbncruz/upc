@@ -56,6 +56,6 @@ ng add angular-cli-ghpages
 
 Ejecutar:
 ```sh
-ng deploy --base-href=https://nicolasbncruz.github.io/upc/
+ng deploy --base-href=https://nicolasbncruz.github.io/upc
 ```
 
